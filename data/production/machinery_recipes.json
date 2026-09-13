@@ -1,0 +1,72 @@
+{
+    "craft_basic_generator": {
+        "name": "Montar Gerador Básico",
+        "required_level": 20,
+        "energy_cost": 20,
+        "duration_seconds": 120,
+        "base_quality": 60,
+        "inputs": {
+            "steel_plate": 5,
+            "electric_motor": 1,
+            "copper_wire": 5,
+            "battery": 1
+        },
+        "output": {
+            "item_id": "basic_generator",
+            "quantity": 1
+        }
+    },
+
+    "craft_ore_crusher": {
+        "name": "Montar Britador de Minério",
+        "required_level": 25,
+        "energy_cost": 30,
+        "duration_seconds": 180,
+        "base_quality": 62,
+        "inputs": {
+            "steel_plate": 8,
+            "gear": 6,
+            "bearing": 4,
+            "electric_motor": 2
+        },
+        "output": {
+            "item_id": "ore_crusher",
+            "quantity": 1
+        }
+    },
+
+    "craft_industrial_furnace": {
+        "name": "Montar Forno Industrial",
+        "required_level": 25,
+        "energy_cost": 30,
+        "duration_seconds": 180,
+        "base_quality": 62,
+        "inputs": {
+            "steel_plate": 8,
+            "industrial_ceramic": 5,
+            "control_unit": 1
+        },
+        "output": {
+            "item_id": "industrial_furnace",
+            "quantity": 1
+        }
+    },
+
+    "craft_hydraulic_press": {
+        "name": "Montar Prensa Hidráulica",
+        "required_level": 35,
+        "energy_cost": 40,
+        "duration_seconds": 240,
+        "base_quality": 65,
+        "inputs": {
+            "steel_plate": 10,
+            "hydraulic_piston": 4,
+            "industrial_pump": 2,
+            "control_unit": 1
+        },
+        "output": {
+            "item_id": "hydraulic_press",
+            "quantity": 1
+        }
+    }
+}

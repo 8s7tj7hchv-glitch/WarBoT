@@ -1,0 +1,51 @@
+{
+    "upgrade_1": {
+        "name": "Melhoria Nível 1",
+        "emoji": "⬆️",
+        "required_level": 10,
+        "required_upgrade_level": 0,
+        "energy_cost": 10,
+        "cooldown": 30,
+        "base_xp": 50,
+        "money_cost": 1500,
+        "materials": {
+            "gear": 2,
+            "bearing": 2,
+            "steel_plate": 1
+        }
+    },
+
+    "upgrade_2": {
+        "name": "Melhoria Nível 2",
+        "emoji": "⬆️",
+        "required_level": 25,
+        "required_upgrade_level": 1,
+        "energy_cost": 15,
+        "cooldown": 45,
+        "base_xp": 80,
+        "money_cost": 5000,
+        "materials": {
+            "gear": 4,
+            "bearing": 4,
+            "steel_plate": 3,
+            "control_unit": 1
+        }
+    },
+
+    "upgrade_3": {
+        "name": "Melhoria Nível 3",
+        "emoji": "💠",
+        "required_level": 50,
+        "required_upgrade_level": 2,
+        "energy_cost": 20,
+        "cooldown": 60,
+        "base_xp": 130,
+        "money_cost": 15000,
+        "materials": {
+            "advanced_alloy": 2,
+            "control_unit": 2,
+            "sensor": 2,
+            "industrial_filter": 2
+        }
+    }
+}

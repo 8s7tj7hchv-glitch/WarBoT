@@ -1,0 +1,3 @@
+import path from 'node:path'; import { JsonManager } from '../core/JsonManager.js'; import { BUILDINGS_DATA_DIR } from '../config/settings.js';
+const FILE = path.join(BUILDINGS_DATA_DIR, 'buildings.json');
+export class BuildingManager { constructor(filePath=FILE){this.path=filePath;JsonManager.ensureFile(this.path,{})} load(){return JsonManager.load(this.path,{})} getLevel(userId,id){const v=this.load()?.[String(userId)]?.[id]; return Math.max(0,Math.trunc(typeof v==='number'?v:Number(v?.level??0)))} setLevel(userId,id,level){const d=this.load(),k=String(userId);d[k]??={};d[k][id]={level:Math.max(0,Math.trunc(level))};JsonManager.save(this.path,d);return d[k][id].level;} }

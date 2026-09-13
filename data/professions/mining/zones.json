@@ -1,0 +1,156 @@
+{
+    "surface": {
+        "name": "Mina de Superfície",
+        "emoji": "🪨",
+        "description": "Zona inicial com recursos comuns.",
+        "required_level": 1,
+        "energy_cost": 5,
+        "cooldown": 15,
+        "resources": {
+            "iron_ore": 35,
+            "coal": 30,
+            "limestone": 20,
+            "clay": 15
+        },
+        "quantity_min": 2,
+        "quantity_max": 6,
+        "quality_min": 20,
+        "quality_max": 55
+    },
+
+    "copper_hills": {
+        "name": "Colinas de Cobre",
+        "emoji": "🟠",
+        "description": "Região com grande concentração de cobre.",
+        "required_level": 5,
+        "energy_cost": 6,
+        "cooldown": 18,
+        "resources": {
+            "copper_ore": 45,
+            "iron_ore": 25,
+            "quartz": 15,
+            "coal": 15
+        },
+        "quantity_min": 3,
+        "quantity_max": 7,
+        "quality_min": 25,
+        "quality_max": 60
+    },
+
+    "bauxite_fields": {
+        "name": "Campos de Bauxita",
+        "emoji": "🟤",
+        "description": "Área rica em minerais industriais.",
+        "required_level": 10,
+        "energy_cost": 7,
+        "cooldown": 20,
+        "resources": {
+            "bauxite": 40,
+            "manganese_ore": 20,
+            "zinc_ore": 20,
+            "iron_ore": 20
+        },
+        "quantity_min": 3,
+        "quantity_max": 8,
+        "quality_min": 30,
+        "quality_max": 65
+    },
+
+    "deep_mine": {
+        "name": "Mina Profunda",
+        "emoji": "⛏️",
+        "description": "Zona subterrânea de mineração avançada.",
+        "required_level": 20,
+        "energy_cost": 8,
+        "cooldown": 25,
+        "resources": {
+            "nickel_ore": 25,
+            "chromium_ore": 20,
+            "lead_ore": 20,
+            "tin_ore": 20,
+            "quartz": 15
+        },
+        "quantity_min": 4,
+        "quantity_max": 9,
+        "quality_min": 35,
+        "quality_max": 70
+    },
+
+    "silver_cavern": {
+        "name": "Caverna de Prata",
+        "emoji": "🥈",
+        "description": "Caverna onde aparecem minerais mais valiosos.",
+        "required_level": 35,
+        "energy_cost": 10,
+        "cooldown": 30,
+        "resources": {
+            "silver_ore": 25,
+            "nickel_ore": 25,
+            "cobalt_ore": 20,
+            "quartz": 20,
+            "gold_ore": 10
+        },
+        "quantity_min": 3,
+        "quantity_max": 8,
+        "quality_min": 40,
+        "quality_max": 75
+    },
+
+    "gold_depths": {
+        "name": "Profundezas Douradas",
+        "emoji": "🥇",
+        "description": "Zona de alto nível com minérios valiosos.",
+        "required_level": 50,
+        "energy_cost": 12,
+        "cooldown": 35,
+        "resources": {
+            "gold_ore": 30,
+            "silver_ore": 25,
+            "cobalt_ore": 20,
+            "lithium_ore": 15,
+            "titanium_ore": 10
+        },
+        "quantity_min": 3,
+        "quantity_max": 7,
+        "quality_min": 45,
+        "quality_max": 80
+    },
+
+    "titanium_fault": {
+        "name": "Falha de Titânio",
+        "emoji": "🔩",
+        "description": "Formação geológica rara com metais avançados.",
+        "required_level": 75,
+        "energy_cost": 14,
+        "cooldown": 40,
+        "resources": {
+            "titanium_ore": 35,
+            "cobalt_ore": 25,
+            "chromium_ore": 20,
+            "lithium_ore": 20
+        },
+        "quantity_min": 4,
+        "quantity_max": 8,
+        "quality_min": 50,
+        "quality_max": 85
+    },
+
+    "crystal_depths": {
+        "name": "Profundezas Cristalinas",
+        "emoji": "💎",
+        "description": "Zona fictícia avançada com recursos raros.",
+        "required_level": 150,
+        "energy_cost": 18,
+        "cooldown": 50,
+        "resources": {
+            "titan_crystal": 40,
+            "nova_crystal": 30,
+            "xenon_alloy": 20,
+            "aetherium": 10
+        },
+        "quantity_min": 1,
+        "quantity_max": 4,
+        "quality_min": 60,
+        "quality_max": 95
+    }
+}

@@ -1,0 +1,192 @@
+{
+    "refine_iron_blacksmith": {
+        "name": "Refinar Ferro",
+        "emoji": "🔩",
+        "required_level": 1,
+        "energy_cost": 5,
+        "cooldown": 12,
+        "base_xp": 20,
+        "inputs": {
+            "iron_ore": 3,
+            "coal": 1
+        },
+        "output": {
+            "item_id": "iron",
+            "quantity": 2
+        },
+        "base_quality": 45
+    },
+
+    "refine_copper_blacksmith": {
+        "name": "Refinar Cobre",
+        "emoji": "🟠",
+        "required_level": 3,
+        "energy_cost": 5,
+        "cooldown": 12,
+        "base_xp": 22,
+        "inputs": {
+            "copper_ore": 3
+        },
+        "output": {
+            "item_id": "copper",
+            "quantity": 2
+        },
+        "base_quality": 45
+    },
+
+    "produce_steel_blacksmith": {
+        "name": "Produzir Aço",
+        "emoji": "⚙️",
+        "required_level": 5,
+        "energy_cost": 7,
+        "cooldown": 16,
+        "base_xp": 30,
+        "inputs": {
+            "iron": 3,
+            "coal": 2
+        },
+        "output": {
+            "item_id": "steel",
+            "quantity": 2
+        },
+        "base_quality": 50
+    },
+
+    "produce_aluminum_blacksmith": {
+        "name": "Produzir Alumínio",
+        "emoji": "⬜",
+        "required_level": 8,
+        "energy_cost": 7,
+        "cooldown": 18,
+        "base_xp": 32,
+        "inputs": {
+            "bauxite": 4
+        },
+        "output": {
+            "item_id": "aluminum",
+            "quantity": 2
+        },
+        "base_quality": 50
+    },
+
+    "forge_steel_plate": {
+        "name": "Forjar Chapa de Aço",
+        "emoji": "🔲",
+        "required_level": 10,
+        "energy_cost": 8,
+        "cooldown": 20,
+        "base_xp": 40,
+        "inputs": {
+            "steel": 3
+        },
+        "output": {
+            "item_id": "steel_plate",
+            "quantity": 1
+        },
+        "base_quality": 55
+    },
+
+    "forge_gear": {
+        "name": "Forjar Engrenagem",
+        "emoji": "⚙️",
+        "required_level": 12,
+        "energy_cost": 8,
+        "cooldown": 20,
+        "base_xp": 42,
+        "inputs": {
+            "steel": 2
+        },
+        "output": {
+            "item_id": "gear",
+            "quantity": 1
+        },
+        "base_quality": 55
+    },
+
+    "forge_bearing": {
+        "name": "Forjar Rolamento",
+        "emoji": "⚙️",
+        "required_level": 15,
+        "energy_cost": 9,
+        "cooldown": 22,
+        "base_xp": 48,
+        "inputs": {
+            "steel": 1
+        },
+        "output": {
+            "item_id": "bearing",
+            "quantity": 1
+        },
+        "base_quality": 58
+    },
+
+    "forge_bolts": {
+        "name": "Forjar Parafusos",
+        "emoji": "🔩",
+        "required_level": 18,
+        "energy_cost": 8,
+        "cooldown": 18,
+        "base_xp": 45,
+        "inputs": {
+            "steel": 1
+        },
+        "output": {
+            "item_id": "steel_bolt",
+            "quantity": 5
+        },
+        "base_quality": 58
+    },
+
+    "forge_steel_beam": {
+        "name": "Forjar Viga de Aço",
+        "emoji": "🏗️",
+        "required_level": 25,
+        "energy_cost": 12,
+        "cooldown": 30,
+        "base_xp": 65,
+        "inputs": {
+            "steel": 5
+        },
+        "output": {
+            "item_id": "steel_beam",
+            "quantity": 1
+        },
+        "base_quality": 60
+    },
+
+    "forge_copper_wire": {
+        "name": "Produzir Fio de Cobre",
+        "emoji": "🧵",
+        "required_level": 20,
+        "energy_cost": 9,
+        "cooldown": 22,
+        "base_xp": 52,
+        "inputs": {
+            "copper": 2
+        },
+        "output": {
+            "item_id": "copper_wire",
+            "quantity": 3
+        },
+        "base_quality": 60
+    },
+
+    "forge_advanced_alloy": {
+        "name": "Produzir Liga Avançada",
+        "emoji": "🔩",
+        "required_level": 75,
+        "energy_cost": 20,
+        "cooldown": 50,
+        "base_xp": 120,
+        "inputs": {
+            "titanium": 2,
+            "nickel": 2,
+            "chromium_ore": 2
+        },
+        "output": {
+            "item_id": "advanced_alloy",
+            "quantity": 1
+        },
+        "base_quality": 70
+    }
+}

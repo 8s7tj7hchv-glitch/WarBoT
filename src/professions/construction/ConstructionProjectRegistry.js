@@ -1,0 +1,1 @@
+import path from 'node:path'; import { CONSTRUCTION_DATA_DIR } from '../../config/settings.js'; import { JsonRegistry } from '../JsonRegistry.js'; export class ConstructionProjectRegistry extends JsonRegistry{constructor(){super(path.join(CONSTRUCTION_DATA_DIR,'projects.json'));}}

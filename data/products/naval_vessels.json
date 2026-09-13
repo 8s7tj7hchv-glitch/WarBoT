@@ -1,0 +1,36 @@
+{
+  "triton_corvette": {
+    "name": "Corveta Triton",
+    "emoji": "🚢",
+    "description": "Embarcação militar fictícia para operações navais abstratas.",
+    "rarity": "epic",
+    "base_price": 780000,
+    "weight": 1,
+    "weight_unit": "hull",
+    "required_level": 120,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "shipyard",
+    "production_category": "naval_vessels",
+    "technology_level": 4,
+    "logistics_class": "oversized"
+  },
+  "abyss_submersible": {
+    "name": "Submersível Abyss",
+    "emoji": "🌊",
+    "description": "Submersível estratégico totalmente fictício.",
+    "rarity": "legendary",
+    "base_price": 1050000,
+    "weight": 1,
+    "weight_unit": "hull",
+    "required_level": 150,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "shipyard",
+    "production_category": "submarines",
+    "technology_level": 5,
+    "logistics_class": "oversized"
+  }
+}

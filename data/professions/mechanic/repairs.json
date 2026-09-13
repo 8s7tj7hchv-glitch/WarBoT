@@ -1,0 +1,63 @@
+{
+    "basic_repair": {
+        "name": "Reparo Básico",
+        "emoji": "🔧",
+        "required_level": 1,
+        "repair_amount": 25,
+        "energy_cost": 5,
+        "cooldown": 15,
+        "base_xp": 20,
+        "materials": {
+            "steel_bolt": 2,
+            "lubricant": 1
+        }
+    },
+
+    "standard_repair": {
+        "name": "Reparo Padrão",
+        "emoji": "🛠️",
+        "required_level": 10,
+        "repair_amount": 60,
+        "energy_cost": 8,
+        "cooldown": 20,
+        "base_xp": 35,
+        "materials": {
+            "steel_bolt": 4,
+            "bearing": 1,
+            "lubricant": 2
+        }
+    },
+
+    "advanced_repair": {
+        "name": "Reparo Avançado",
+        "emoji": "⚙️",
+        "required_level": 25,
+        "repair_amount": 140,
+        "energy_cost": 12,
+        "cooldown": 30,
+        "base_xp": 60,
+        "materials": {
+            "steel_bolt": 6,
+            "bearing": 2,
+            "gear": 2,
+            "lubricant": 3
+        }
+    },
+
+    "industrial_repair": {
+        "name": "Reparo Industrial",
+        "emoji": "🏭",
+        "required_level": 50,
+        "repair_amount": 300,
+        "energy_cost": 18,
+        "cooldown": 45,
+        "base_xp": 100,
+        "materials": {
+            "steel_plate": 2,
+            "bearing": 4,
+            "gear": 4,
+            "industrial_filter": 2,
+            "lubricant": 5
+        }
+    }
+}

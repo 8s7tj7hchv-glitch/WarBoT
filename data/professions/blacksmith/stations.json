@@ -1,0 +1,51 @@
+{
+    "basic_forge": {
+        "name": "Forja Básica",
+        "emoji": "🔥",
+        "description": "Estação inicial de metalurgia.",
+        "required_level": 1,
+        "quality_bonus": 0,
+        "xp_bonus": 0.0,
+        "speed_bonus": 0.0
+    },
+
+    "steel_forge": {
+        "name": "Forja de Aço",
+        "emoji": "🔨",
+        "description": "Forja melhorada para ligas e componentes.",
+        "required_level": 15,
+        "quality_bonus": 5,
+        "xp_bonus": 0.10,
+        "speed_bonus": 0.05
+    },
+
+    "industrial_forge": {
+        "name": "Forja Industrial",
+        "emoji": "🏭",
+        "description": "Estação profissional para produção em escala.",
+        "required_level": 35,
+        "quality_bonus": 10,
+        "xp_bonus": 0.20,
+        "speed_bonus": 0.10
+    },
+
+    "precision_forge": {
+        "name": "Forja de Precisão",
+        "emoji": "⚙️",
+        "description": "Forja avançada para componentes técnicos.",
+        "required_level": 75,
+        "quality_bonus": 15,
+        "xp_bonus": 0.30,
+        "speed_bonus": 0.15
+    },
+
+    "advanced_forge": {
+        "name": "Forja Avançada",
+        "emoji": "💠",
+        "description": "Estação de alto nível para materiais especiais.",
+        "required_level": 150,
+        "quality_bonus": 20,
+        "xp_bonus": 0.40,
+        "speed_bonus": 0.20
+    }
+}

@@ -1,0 +1,26 @@
+import { SlashCommandBuilder } from 'discord.js';
+import { EconomyService } from '../economy/EconomyService.js';
+
+const economy = new EconomyService();
+
+export default {
+  data: new SlashCommandBuilder()
+    .setName('depositar')
+    .setDescription('Deposita dinheiro da carteira no banco.')
+    .addNumberOption((option) => option
+      .setName('valor')
+      .setDescription('Valor que deseja depositar.')
+      .setMinValue(0.01)
+      .setRequired(true)),
+
+  async execute(interaction) {
+    const amount = interaction.options.getNumber('valor', true);
+    const [success, message] = economy.deposit(interaction.user.id, amount);
+    const balances = economy.balances(interaction.user.id);
+
+    await interaction.reply({
+      content: `${success ? '✅' : '❌'} ${message}\n👛 Carteira: **$ ${balances.wallet.toFixed(2)}**\n🏦 Banco: **$ ${balances.bank.toFixed(2)}**`,
+      ephemeral: true
+    });
+  }
+};

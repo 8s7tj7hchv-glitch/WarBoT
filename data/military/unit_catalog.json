@@ -1,0 +1,56 @@
+{
+  "frontier_cohort": {
+    "name": "Coorte de Fronteira",
+    "emoji": "🪖",
+    "branch": "army",
+    "description": "Unidade terrestre fictícia para presença territorial e defesa abstrata.",
+    "required_level": 1,
+    "base_readiness": 45,
+    "game_stats": { "power": 28, "defense": 42, "mobility": 24, "support": 18 }
+  },
+  "mechanized_group": {
+    "name": "Grupo Mecanizado",
+    "emoji": "🛡️",
+    "branch": "army",
+    "description": "Formação terrestre fictícia com alta mobilidade de jogo.",
+    "required_level": 2,
+    "base_readiness": 40,
+    "game_stats": { "power": 44, "defense": 38, "mobility": 48, "support": 24 }
+  },
+  "air_wing": {
+    "name": "Ala Aérea",
+    "emoji": "✈️",
+    "branch": "air_force",
+    "description": "Formação aérea fictícia; todos os atributos são abstratos de jogo.",
+    "required_level": 2,
+    "base_readiness": 35,
+    "game_stats": { "power": 48, "defense": 24, "mobility": 62, "support": 22 }
+  },
+  "naval_group": {
+    "name": "Grupo Naval",
+    "emoji": "⚓",
+    "branch": "navy",
+    "description": "Formação naval fictícia para controle e presença marítima abstrata.",
+    "required_level": 2,
+    "base_readiness": 38,
+    "game_stats": { "power": 46, "defense": 48, "mobility": 32, "support": 30 }
+  },
+  "submersible_group": {
+    "name": "Grupo Submersível",
+    "emoji": "🌊",
+    "branch": "navy",
+    "description": "Formação submersível totalmente fictícia, resolvida apenas por estatísticas de jogo.",
+    "required_level": 3,
+    "base_readiness": 32,
+    "game_stats": { "power": 52, "defense": 34, "mobility": 40, "support": 16 }
+  },
+  "strategic_defense_group": {
+    "name": "Grupo de Defesa Estratégica",
+    "emoji": "🛰️",
+    "branch": "strategic",
+    "description": "Unidade estratégica fictícia e abstrata, sem equivalência operacional real.",
+    "required_level": 3,
+    "base_readiness": 30,
+    "game_stats": { "power": 36, "defense": 62, "mobility": 12, "support": 44 }
+  }
+}

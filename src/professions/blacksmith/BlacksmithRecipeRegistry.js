@@ -1,0 +1,1 @@
+import path from 'node:path'; import { BLACKSMITH_DATA_DIR } from '../../config/settings.js'; import { JsonRegistry } from '../JsonRegistry.js'; export class BlacksmithRecipeRegistry extends JsonRegistry{constructor(){super(path.join(BLACKSMITH_DATA_DIR,'recipes.json'));}}

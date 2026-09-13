@@ -1,0 +1,196 @@
+{
+    "iron": {
+        "name": "Ferro Refinado",
+        "emoji": "🔩",
+        "description": "Metal refinado obtido do minério de ferro.",
+        "rarity": "common",
+        "base_price": 32,
+        "weight": 2.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "steel": {
+        "name": "Aço",
+        "emoji": "⚙️",
+        "description": "Liga metálica fundamental para indústria e construção.",
+        "rarity": "common",
+        "base_price": 48,
+        "weight": 1.9,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "copper": {
+        "name": "Cobre Refinado",
+        "emoji": "🟠",
+        "description": "Cobre processado para uso industrial.",
+        "rarity": "common",
+        "base_price": 45,
+        "weight": 1.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "aluminum": {
+        "name": "Alumínio",
+        "emoji": "⬜",
+        "description": "Metal leve utilizado em veículos e equipamentos.",
+        "rarity": "common",
+        "base_price": 42,
+        "weight": 1.1,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "zinc": {
+        "name": "Zinco Refinado",
+        "emoji": "⚙️",
+        "description": "Metal utilizado em ligas e galvanização.",
+        "rarity": "uncommon",
+        "base_price": 55,
+        "weight": 1.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "tin": {
+        "name": "Estanho Refinado",
+        "emoji": "⬜",
+        "description": "Metal utilizado em ligas e componentes.",
+        "rarity": "uncommon",
+        "base_price": 62,
+        "weight": 1.7,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "nickel": {
+        "name": "Níquel Refinado",
+        "emoji": "🔘",
+        "description": "Metal utilizado em ligas de alta resistência.",
+        "rarity": "uncommon",
+        "base_price": 72,
+        "weight": 1.9,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "lead": {
+        "name": "Chumbo Refinado",
+        "emoji": "◼️",
+        "description": "Metal industrial de alta densidade.",
+        "rarity": "uncommon",
+        "base_price": 52,
+        "weight": 3.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "titanium": {
+        "name": "Titânio Refinado",
+        "emoji": "🔩",
+        "description": "Metal avançado leve e resistente.",
+        "rarity": "rare",
+        "base_price": 175,
+        "weight": 1.4,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "silver": {
+        "name": "Prata Refinada",
+        "emoji": "🥈",
+        "description": "Metal valioso utilizado em componentes eletrônicos.",
+        "rarity": "rare",
+        "base_price": 240,
+        "weight": 2.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "gold": {
+        "name": "Ouro Refinado",
+        "emoji": "🥇",
+        "description": "Metal precioso utilizado em eletrônica e economia.",
+        "rarity": "rare",
+        "base_price": 450,
+        "weight": 2.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "glass": {
+        "name": "Vidro Industrial",
+        "emoji": "🪟",
+        "description": "Material utilizado em construção e equipamentos.",
+        "rarity": "common",
+        "base_price": 24,
+        "weight": 1.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "cement": {
+        "name": "Cimento",
+        "emoji": "🏗️",
+        "description": "Material básico utilizado na construção.",
+        "rarity": "common",
+        "base_price": 20,
+        "weight": 2.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "concrete": {
+        "name": "Concreto",
+        "emoji": "🧱",
+        "description": "Material estrutural utilizado em construções.",
+        "rarity": "common",
+        "base_price": 34,
+        "weight": 3.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "brick": {
+        "name": "Tijolo Industrial",
+        "emoji": "🧱",
+        "description": "Material de construção produzido a partir de argila.",
+        "rarity": "common",
+        "base_price": 12,
+        "weight": 1.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    }
+}

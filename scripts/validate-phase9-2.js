@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root=process.cwd();
+const dir=path.join(root,'src','commands');
+const expected=['game','economia','inventario','producao','profissoes','mercado','trocas','industria','pais','forcas','guerra','diplomacia','mundial','configurar'];
+const files=fs.readdirSync(dir).filter(f=>f.endsWith('.js')).map(f=>f.replace(/\.js$/,'')).sort();
+const want=[...expected].sort();
+if(JSON.stringify(files)!==JSON.stringify(want)) throw new Error(`Comandos públicos incorretos. Esperado ${want.join(', ')}; recebido ${files.join(', ')}`);
+const legacy=fs.readdirSync(path.join(root,'src','legacy_commands')).filter(f=>f.endsWith('.js')).length;
+if(legacy<50) throw new Error('Comandos legados não foram preservados.');
+console.log(`✅ Fase 9.2: ${files.length} comandos públicos unificados.`);
+console.log(`✅ ${legacy} handlers legados preservados para uso interno pelos painéis.`);

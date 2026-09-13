@@ -1,0 +1,5 @@
+import { SlashCommandBuilder } from 'discord.js';
+import { CountryManager } from '../world/CountryManager.js';
+import { WorldWarManager } from '../global_war/WorldWarManager.js';
+const countries=new CountryManager(), wars=new WorldWarManager({countries});
+export default{data:new SlashCommandBuilder().setName('aderirguerramundial').setDescription('Adere seu país a um dos lados de uma guerra mundial.').addStringOption(o=>o.setName('guerra').setDescription('ID da guerra mundial').setRequired(true)).addStringOption(o=>o.setName('lado').setDescription('Bloco A ou B').setRequired(true).addChoices({name:'Bloco A',value:'a'},{name:'Bloco B',value:'b'})),async execute(i){try{const mine=countries.memberCountry(i.user.id);if(!mine)throw new Error('Você não pertence a um país.');const w=wars.join({warId:i.options.getString('guerra',true),countryId:mine.id,side:i.options.getString('lado',true),actorId:i.user.id});await i.reply({content:`✅ ${mine.name} entrou no **Bloco ${i.options.getString('lado',true).toUpperCase()}** de ${w.name}.`,ephemeral:true})}catch(e){await i.reply({content:`❌ ${e.message}`,ephemeral:true})}}};

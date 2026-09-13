@@ -1,0 +1,36 @@
+{
+  "nova_interceptor_system": {
+    "name": "Sistema Nova",
+    "emoji": "🎯",
+    "description": "Sistema estratégico fictício com resolução totalmente abstrata; não representa armamento real.",
+    "rarity": "epic",
+    "base_price": 290000,
+    "weight": 1,
+    "weight_unit": "system",
+    "required_level": 110,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "military_depot",
+    "production_category": "missile_systems",
+    "technology_level": 4,
+    "logistics_class": "heavy"
+  },
+  "aegis_defense_node": {
+    "name": "Nó de Defesa Aegis",
+    "emoji": "🛰️",
+    "description": "Plataforma defensiva fictícia baseada apenas em mecânicas de jogo.",
+    "rarity": "legendary",
+    "base_price": 390000,
+    "weight": 1,
+    "weight_unit": "system",
+    "required_level": 130,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "military_depot",
+    "production_category": "missile_systems",
+    "technology_level": 5,
+    "logistics_class": "heavy"
+  }
+}

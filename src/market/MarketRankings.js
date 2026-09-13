@@ -1,0 +1,2 @@
+import { MarketHistoryManager } from './MarketHistoryManager.js';
+export class MarketRankings { constructor(){this.history=new MarketHistoryManager();} mostTraded(limit=10){const map=new Map();for(const t of this.history.listAll()){const e=map.get(t.item_id)??{item_id:t.item_id,volume:0,turnover:0,trades:0};e.volume+=Number(t.quantity||0);e.turnover+=Number(t.total||0);e.trades++;map.set(t.item_id,e);}return [...map.values()].sort((a,b)=>b.volume-a.volume).slice(0,limit);} }

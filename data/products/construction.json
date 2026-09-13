@@ -1,0 +1,121 @@
+{
+    "metal_frame": {
+        "name": "Estrutura Metálica",
+        "emoji": "🏗️",
+        "description": "Estrutura usada em construções industriais.",
+        "rarity": "common",
+        "base_price": 480,
+        "weight": 15.0,
+        "required_level": 5,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "reinforced_panel": {
+        "name": "Painel Reforçado",
+        "emoji": "🧱",
+        "description": "Painel estrutural para instalações.",
+        "rarity": "common",
+        "base_price": 350,
+        "weight": 12.0,
+        "required_level": 5,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_pipe": {
+        "name": "Tubulação Industrial",
+        "emoji": "🔩",
+        "description": "Tubulação utilizada em fábricas.",
+        "rarity": "common",
+        "base_price": 240,
+        "weight": 5.0,
+        "required_level": 4,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "electrical_panel": {
+        "name": "Painel Elétrico",
+        "emoji": "⚡",
+        "description": "Painel utilizado na distribuição elétrica.",
+        "rarity": "uncommon",
+        "base_price": 650,
+        "weight": 6.0,
+        "required_level": 12,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_door": {
+        "name": "Porta Industrial",
+        "emoji": "🚪",
+        "description": "Porta reforçada utilizada em instalações.",
+        "rarity": "common",
+        "base_price": 520,
+        "weight": 20.0,
+        "required_level": 8,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "storage_rack": {
+        "name": "Estante Industrial",
+        "emoji": "📦",
+        "description": "Estrutura para organização de estoques.",
+        "rarity": "common",
+        "base_price": 420,
+        "weight": 14.0,
+        "required_level": 6,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "warehouse_module": {
+        "name": "Módulo de Armazém",
+        "emoji": "🏢",
+        "description": "Módulo utilizado na construção de depósitos.",
+        "rarity": "uncommon",
+        "base_price": 3200,
+        "weight": 120.0,
+        "required_level": 20,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "factory_module": {
+        "name": "Módulo de Fábrica",
+        "emoji": "🏭",
+        "description": "Estrutura modular utilizada na construção de fábricas.",
+        "rarity": "rare",
+        "base_price": 6500,
+        "weight": 240.0,
+        "required_level": 30,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "office_module": {
+        "name": "Módulo Administrativo",
+        "emoji": "🏢",
+        "description": "Estrutura utilizada em complexos industriais.",
+        "rarity": "uncommon",
+        "base_price": 2800,
+        "weight": 100.0,
+        "required_level": 18,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "loading_platform": {
+        "name": "Plataforma de Carga",
+        "emoji": "🚚",
+        "description": "Estrutura para operações logísticas.",
+        "rarity": "uncommon",
+        "base_price": 3600,
+        "weight": 140.0,
+        "required_level": 20,
+        "tradeable": true,
+        "storable": true
+    }
+}

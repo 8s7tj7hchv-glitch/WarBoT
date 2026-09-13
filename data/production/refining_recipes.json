@@ -1,0 +1,111 @@
+{
+    "refine_iron": {
+        "name": "Refinar Ferro",
+        "required_level": 1,
+        "energy_cost": 3,
+        "duration_seconds": 15,
+        "base_quality": 50,
+        "inputs": {
+            "iron_ore": 3,
+            "coal": 1
+        },
+        "output": {
+            "item_id": "iron",
+            "quantity": 2
+        }
+    },
+
+    "produce_steel": {
+        "name": "Produzir Aço",
+        "required_level": 3,
+        "energy_cost": 5,
+        "duration_seconds": 25,
+        "base_quality": 55,
+        "inputs": {
+            "iron": 3,
+            "coal": 2
+        },
+        "output": {
+            "item_id": "steel",
+            "quantity": 2
+        }
+    },
+
+    "refine_copper": {
+        "name": "Refinar Cobre",
+        "required_level": 2,
+        "energy_cost": 3,
+        "duration_seconds": 15,
+        "base_quality": 50,
+        "inputs": {
+            "copper_ore": 3
+        },
+        "output": {
+            "item_id": "copper",
+            "quantity": 2
+        }
+    },
+
+    "produce_aluminum": {
+        "name": "Produzir Alumínio",
+        "required_level": 4,
+        "energy_cost": 4,
+        "duration_seconds": 20,
+        "base_quality": 52,
+        "inputs": {
+            "bauxite": 4
+        },
+        "output": {
+            "item_id": "aluminum",
+            "quantity": 2
+        }
+    },
+
+    "produce_glass": {
+        "name": "Produzir Vidro Industrial",
+        "required_level": 2,
+        "energy_cost": 3,
+        "duration_seconds": 15,
+        "base_quality": 50,
+        "inputs": {
+            "sand": 3,
+            "silica": 1
+        },
+        "output": {
+            "item_id": "glass",
+            "quantity": 2
+        }
+    },
+
+    "produce_cement": {
+        "name": "Produzir Cimento",
+        "required_level": 2,
+        "energy_cost": 2,
+        "duration_seconds": 12,
+        "base_quality": 50,
+        "inputs": {
+            "limestone": 3,
+            "clay": 1
+        },
+        "output": {
+            "item_id": "cement",
+            "quantity": 2
+        }
+    },
+
+    "produce_concrete": {
+        "name": "Produzir Concreto",
+        "required_level": 4,
+        "energy_cost": 3,
+        "duration_seconds": 18,
+        "base_quality": 55,
+        "inputs": {
+            "cement": 2,
+            "sand": 2
+        },
+        "output": {
+            "item_id": "concrete",
+            "quantity": 3
+        }
+    }
+}

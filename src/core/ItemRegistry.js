@@ -1,0 +1,13 @@
+import path from 'node:path';
+import { JsonManager } from './JsonManager.js';
+import { PRODUCTS_DATA_DIR, RESOURCES_DATA_DIR } from '../config/settings.js';
+const RESOURCE_FILES={raw_materials:'raw_materials.json',minerals:'minerals.json',refined_materials:'refined_materials.json',industrial_materials:'industrial_materials.json',special_resources:'special_resources.json',strategic_materials:'strategic_materials.json'};
+const PRODUCT_FILES={components:'components.json',tools:'tools.json',machinery:'machinery.json',vehicles:'vehicles.json',construction:'construction.json',military_components:'military_components.json',military_vehicles:'military_vehicles.json',aircraft:'aircraft.json',naval_vessels:'naval_vessels.json',missile_systems:'missile_systems.json'};
+const clone=v=>structuredClone(v);
+export class ItemRegistry{
+ constructor(){for(const f of Object.values(RESOURCE_FILES))JsonManager.ensureFile(path.join(RESOURCES_DATA_DIR,f),{});for(const f of Object.values(PRODUCT_FILES))JsonManager.ensureFile(path.join(PRODUCTS_DATA_DIR,f),{});}
+ static normalizeId(id){return String(id??'').trim().toLowerCase().replaceAll(' ','_').replaceAll('-','_')}
+ loadAll(){const out={};for(const [category,file] of Object.entries(RESOURCE_FILES)){const d=JsonManager.load(path.join(RESOURCES_DATA_DIR,file),{});for(const [id,raw] of Object.entries(d&&typeof d==='object'&&!Array.isArray(d)?d:{}))out[id]={...clone(raw),id,category,item_type:'resource'};}for(const [category,file] of Object.entries(PRODUCT_FILES)){const d=JsonManager.load(path.join(PRODUCTS_DATA_DIR,file),{});for(const [id,raw] of Object.entries(d&&typeof d==='object'&&!Array.isArray(d)?d:{}))out[id]={...clone(raw),id,category,item_type:'product'};}return out;}
+ get(id){const v=this.loadAll()[ItemRegistry.normalizeId(id)];return v?clone(v):null} exists(id){return this.get(id)!==null} getName(id){return this.get(id)?.name??String(id)} getEmoji(id){return this.get(id)?.emoji??'📦'} getWeight(id){return Number(this.get(id)?.weight??0)} getBasePrice(id){return Number(this.get(id)?.base_price??0)} isTradeable(id){const i=this.get(id);return i?Boolean(i.tradeable??true):false} isStorable(id){const i=this.get(id);return i?Boolean(i.storable??true):false}
+ getStorageType(id){return String(this.get(id)?.storage_type??'standard')} getTechnologyLevel(id){return Math.max(0,Math.trunc(Number(this.get(id)?.technology_level??0)))} requiresSpecialStorage(id){return Boolean(this.get(id)?.requires_special_storage??false)} isMilitary(id){return ['military_components','military_vehicles','aircraft','naval_vessels','submarines','missile_systems'].includes(this.get(id)?.category)} listCategory(category){return Object.values(this.loadAll()).filter(i=>i.category===category).map(clone)}
+}

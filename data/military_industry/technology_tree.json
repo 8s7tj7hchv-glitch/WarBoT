@@ -1,0 +1,72 @@
+{
+  "industrial_foundations": {
+    "name": "Fundamentos Industriais Estratégicos",
+    "emoji": "🏭",
+    "cost": 100,
+    "prerequisites": [],
+    "unlocks_facilities": ["component_lab", "military_factory"],
+    "unlocks_recipes": ["craft_vector_core", "craft_flux_cell", "craft_aegis_plating", "craft_atlas_drive"],
+    "description": "Base industrial abstrata para a cadeia estratégica do país."
+  },
+  "advanced_electronics": {
+    "name": "Eletrônica Estratégica",
+    "emoji": "📡",
+    "cost": 160,
+    "prerequisites": ["industrial_foundations"],
+    "unlocks_facilities": ["electronics_center"],
+    "unlocks_recipes": ["craft_orion_sensor"],
+    "description": "Libera módulos eletrônicos fictícios e centros especializados."
+  },
+  "mechanized_industry": {
+    "name": "Indústria Mecanizada",
+    "emoji": "🚛",
+    "cost": 220,
+    "prerequisites": ["industrial_foundations"],
+    "unlocks_facilities": ["vehicle_works"],
+    "unlocks_recipes": ["assemble_guardian_apc", "assemble_titan_support_vehicle"],
+    "description": "Libera linhas de montagem de veículos fictícios."
+  },
+  "aerospace_industry": {
+    "name": "Indústria Aeroespacial",
+    "emoji": "✈️",
+    "cost": 320,
+    "prerequisites": ["industrial_foundations", "advanced_electronics"],
+    "unlocks_facilities": ["aerospace_plant"],
+    "unlocks_recipes": ["assemble_falcon_x", "assemble_heron_lifter"],
+    "description": "Libera produção abstrata de aeronaves fictícias."
+  },
+  "naval_industry": {
+    "name": "Indústria Naval Estratégica",
+    "emoji": "⚓",
+    "cost": 340,
+    "prerequisites": ["industrial_foundations"],
+    "unlocks_facilities": ["naval_yard"],
+    "unlocks_recipes": ["assemble_triton_corvette", "assemble_abyss_submersible"],
+    "description": "Libera linhas navais fictícias e submersíveis abstratos."
+  },
+  "strategic_systems": {
+    "name": "Sistemas Estratégicos Integrados",
+    "emoji": "🛰️",
+    "cost": 380,
+    "prerequisites": ["industrial_foundations", "advanced_electronics"],
+    "unlocks_facilities": ["strategic_systems_plant"],
+    "unlocks_recipes": ["assemble_nova_interceptor_system", "assemble_aegis_defense_node"],
+    "description": "Libera sistemas defensivos inteiramente fictícios e abstratos de jogo."
+  },
+  "industrial_automation": {
+    "name": "Automação Industrial",
+    "emoji": "⚙️",
+    "cost": 450,
+    "prerequisites": ["mechanized_industry", "advanced_electronics"],
+    "production_bonus": 0.10,
+    "description": "Aumenta a eficiência de produção do país em 10%."
+  },
+  "maintenance_doctrine": {
+    "name": "Doutrina de Manutenção",
+    "emoji": "🔧",
+    "cost": 180,
+    "prerequisites": ["industrial_foundations"],
+    "maintenance_bonus": 0.20,
+    "description": "Melhora em 20% a recuperação de condição e prontidão."
+  }
+}

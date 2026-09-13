@@ -1,0 +1,8 @@
+import { CountryManager } from '../world/CountryManager.js';import { AllianceManager } from './AllianceManager.js';import { TreatyManager } from './TreatyManager.js';import { RestrictionManager } from './RestrictionManager.js';import { RelationManager } from './RelationManager.js';
+export class DiplomaticPolicyService{
+ constructor(){this.countries=new CountryManager();this.relations=new RelationManager();this.alliances=new AllianceManager({countries:this.countries,relations:this.relations});this.treaties=new TreatyManager({countries:this.countries,relations:this.relations});this.restrictions=new RestrictionManager({countries:this.countries,relations:this.relations})}
+ canDeclareWar(a,b){if(this.alliances.areAllied(a,b))return [false,'Países da mesma aliança não podem declarar guerra entre si.'];if(this.treaties.hasActive(a,b,'non_aggression'))return [false,'Existe um tratado de não agressão ativo.'];return [true,'ok']}
+ canTradeCountries(a,b,category='all'){if(this.restrictions.blocksTrade(a,b,category))return [false,'Comércio bloqueado por embargo diplomático.'];return [true,'ok']}
+ canTradeGuilds(originGuildId,destinationGuildId,category='all'){const a=this.countries.getByGuild(originGuildId),b=this.countries.getByGuild(destinationGuildId);if(!a||!b)return [true,'ok'];return this.canTradeCountries(a.id,b.id,category)}
+ tradeFeeMultiplierGuilds(originGuildId,destinationGuildId){const a=this.countries.getByGuild(originGuildId),b=this.countries.getByGuild(destinationGuildId);if(!a||!b)return 1;let m=1;if(this.treaties.hasActive(a.id,b.id,'trade'))m-=0.20;if(this.restrictions.activeBetween(a.id,b.id).some(r=>r.type==='sanction'))m+=0.25;return Math.max(0.5,Math.min(2,m))}
+}

@@ -1,0 +1,8 @@
+import { MarketHistoryManager } from './MarketHistoryManager.js';
+import { ItemRegistry } from '../core/ItemRegistry.js';
+export class MarketAnalytics {
+  constructor(history=new MarketHistoryManager(),items=new ItemRegistry()){this.history=history;this.items=items;}
+  tradesInPeriod(itemId,hours=24){ const start=Date.now()-Math.max(1,hours)*3600000; return this.history.getItemHistory(itemId,10000).filter(t=>new Date(t.created_at).getTime()>=start).sort((a,b)=>String(a.created_at).localeCompare(String(b.created_at))); }
+  itemStats(itemId,hours=24){ const trades=this.tradesInPeriod(itemId,hours); const base=Number(this.items.getBasePrice(itemId)); if(!trades.length) return {item_id:itemId,hours,trades:0,volume:0,turnover:0,open:base,close:base,high:base,low:base,average:base,change:0,change_percent:0}; const qty=trades.map(t=>Number(t.quantity)||0), prices=trades.map(t=>Number(t.unit_price)||0), volume=qty.reduce((a,b)=>a+b,0), turnover=trades.reduce((s,t)=>s+(Number(t.quantity)||0)*(Number(t.unit_price)||0),0), open=prices[0], close=prices.at(-1), avg=volume?turnover/volume:0, change=close-open; return {item_id:itemId,hours,trades:trades.length,volume,turnover:+turnover.toFixed(2),open:+open.toFixed(2),close:+close.toFixed(2),high:+Math.max(...prices).toFixed(2),low:+Math.min(...prices).toFixed(2),average:+avg.toFixed(2),change:+change.toFixed(2),change_percent:open?+(change/open*100).toFixed(2):0}; }
+  globalStats(){ const trades=this.history.listAll(); return {trades:trades.length,unique_items:new Set(trades.map(t=>t.item_id).filter(Boolean)).size,volume:trades.reduce((s,t)=>s+Number(t.quantity||0),0),turnover:+trades.reduce((s,t)=>s+Number(t.total||0),0).toFixed(2),fees:+trades.reduce((s,t)=>s+Number(t.fee||0),0).toFixed(2)}; }
+}

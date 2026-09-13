@@ -1,0 +1,113 @@
+{
+    "craft_gear": {
+        "name": "Fabricar Engrenagem",
+        "required_level": 5,
+        "energy_cost": 4,
+        "duration_seconds": 20,
+        "base_quality": 55,
+        "inputs": {
+            "steel": 2
+        },
+        "output": {
+            "item_id": "gear",
+            "quantity": 1
+        }
+    },
+
+    "craft_bearing": {
+        "name": "Fabricar Rolamento",
+        "required_level": 5,
+        "energy_cost": 4,
+        "duration_seconds": 20,
+        "base_quality": 55,
+        "inputs": {
+            "steel": 1
+        },
+        "output": {
+            "item_id": "bearing",
+            "quantity": 1
+        }
+    },
+
+    "craft_steel_bolts": {
+        "name": "Fabricar Parafusos",
+        "required_level": 3,
+        "energy_cost": 2,
+        "duration_seconds": 10,
+        "base_quality": 50,
+        "inputs": {
+            "steel": 1
+        },
+        "output": {
+            "item_id": "steel_bolt",
+            "quantity": 5
+        }
+    },
+
+    "craft_copper_wire": {
+        "name": "Fabricar Fio de Cobre",
+        "required_level": 4,
+        "energy_cost": 3,
+        "duration_seconds": 15,
+        "base_quality": 55,
+        "inputs": {
+            "copper": 2
+        },
+        "output": {
+            "item_id": "copper_wire",
+            "quantity": 3
+        }
+    },
+
+    "craft_battery": {
+        "name": "Fabricar Bateria Industrial",
+        "required_level": 10,
+        "energy_cost": 8,
+        "duration_seconds": 45,
+        "base_quality": 60,
+        "inputs": {
+            "battery_material": 2,
+            "copper_wire": 2,
+            "industrial_plastic": 1
+        },
+        "output": {
+            "item_id": "battery",
+            "quantity": 1
+        }
+    },
+
+    "craft_electric_motor": {
+        "name": "Fabricar Motor Elétrico",
+        "required_level": 15,
+        "energy_cost": 12,
+        "duration_seconds": 60,
+        "base_quality": 62,
+        "inputs": {
+            "steel": 3,
+            "copper_wire": 4,
+            "bearing": 2,
+            "gear": 2
+        },
+        "output": {
+            "item_id": "electric_motor",
+            "quantity": 1
+        }
+    },
+
+    "craft_control_unit": {
+        "name": "Fabricar Unidade de Controle",
+        "required_level": 20,
+        "energy_cost": 15,
+        "duration_seconds": 90,
+        "base_quality": 65,
+        "inputs": {
+            "circuit_board": 2,
+            "sensor": 2,
+            "copper_wire": 2
+        },
+        "output": {
+            "item_id": "control_unit",
+            "quantity": 1
+        }
+    }
+}

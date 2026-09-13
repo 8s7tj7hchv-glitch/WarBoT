@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "score": {
+    "battle_win": 3,
+    "territory_control": 2,
+    "infrastructure_point": 0.25,
+    "active_treaty": 0.5
+  },
+  "events": {
+    "max_active": 3,
+    "default_duration_hours": 24
+  }
+}

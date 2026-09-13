@@ -1,0 +1,250 @@
+{
+  "craft_vector_core": {
+    "name": "Montar Núcleo Vector",
+    "required_level": 45,
+    "energy_cost": 35,
+    "duration_seconds": 360,
+    "base_quality": 65,
+    "facility": "component_lab",
+    "facility_level": 1,
+    "inputs": {
+      "aegis_alloy": 3,
+      "quantum_fiber": 2,
+      "control_unit": 1
+    },
+    "output": {
+      "item_id": "vector_core",
+      "quantity": 1
+    }
+  },
+  "craft_flux_cell": {
+    "name": "Montar Célula Flux",
+    "required_level": 40,
+    "energy_cost": 30,
+    "duration_seconds": 300,
+    "base_quality": 64,
+    "facility": "component_lab",
+    "facility_level": 1,
+    "inputs": {
+      "flux_crystal": 2,
+      "ceramic_x": 2,
+      "battery": 1
+    },
+    "output": {
+      "item_id": "flux_cell",
+      "quantity": 1
+    }
+  },
+  "craft_aegis_plating": {
+    "name": "Fabricar Blindagem Aegis",
+    "required_level": 55,
+    "energy_cost": 55,
+    "duration_seconds": 540,
+    "base_quality": 68,
+    "facility": "military_factory",
+    "facility_level": 1,
+    "inputs": {
+      "aegis_alloy": 8,
+      "ceramic_x": 4,
+      "steel": 6
+    },
+    "output": {
+      "item_id": "aegis_plating",
+      "quantity": 1
+    }
+  },
+  "craft_orion_sensor": {
+    "name": "Montar Sensor Orion",
+    "required_level": 65,
+    "energy_cost": 45,
+    "duration_seconds": 480,
+    "base_quality": 70,
+    "facility": "electronics_center",
+    "facility_level": 1,
+    "inputs": {
+      "quantum_fiber": 3,
+      "control_unit": 2,
+      "copper_wire": 4
+    },
+    "output": {
+      "item_id": "orion_sensor",
+      "quantity": 1
+    }
+  },
+  "craft_atlas_drive": {
+    "name": "Montar Propulsor Atlas",
+    "required_level": 70,
+    "energy_cost": 65,
+    "duration_seconds": 720,
+    "base_quality": 72,
+    "facility": "military_factory",
+    "facility_level": 2,
+    "inputs": {
+      "aegis_alloy": 10,
+      "mechanical_motor": 2,
+      "transmission": 1,
+      "flux_cell": 1
+    },
+    "output": {
+      "item_id": "atlas_drive",
+      "quantity": 1
+    }
+  },
+  "assemble_guardian_apc": {
+    "name": "Montar Guardian APC",
+    "required_level": 80,
+    "energy_cost": 120,
+    "duration_seconds": 1800,
+    "base_quality": 72,
+    "facility": "vehicle_works",
+    "facility_level": 1,
+    "inputs": {
+      "aegis_plating": 4,
+      "atlas_drive": 1,
+      "vector_core": 1,
+      "orion_sensor": 1,
+      "vehicle_chassis": 2
+    },
+    "output": {
+      "item_id": "guardian_apc",
+      "quantity": 1
+    }
+  },
+  "assemble_titan_support_vehicle": {
+    "name": "Montar Titan de Apoio",
+    "required_level": 95,
+    "energy_cost": 150,
+    "duration_seconds": 2400,
+    "base_quality": 75,
+    "facility": "vehicle_works",
+    "facility_level": 2,
+    "inputs": {
+      "aegis_plating": 6,
+      "atlas_drive": 2,
+      "vector_core": 2,
+      "heavy_truck": 1
+    },
+    "output": {
+      "item_id": "titan_support_vehicle",
+      "quantity": 1
+    }
+  },
+  "assemble_falcon_x": {
+    "name": "Montar Falcon X",
+    "required_level": 115,
+    "energy_cost": 210,
+    "duration_seconds": 3600,
+    "base_quality": 78,
+    "facility": "aerospace_plant",
+    "facility_level": 1,
+    "inputs": {
+      "vector_composite": 14,
+      "vector_core": 2,
+      "orion_sensor": 2,
+      "flux_cell": 3,
+      "atlas_drive": 2
+    },
+    "output": {
+      "item_id": "falcon_x",
+      "quantity": 1
+    }
+  },
+  "assemble_heron_lifter": {
+    "name": "Montar Heron Lifter",
+    "required_level": 105,
+    "energy_cost": 180,
+    "duration_seconds": 3000,
+    "base_quality": 75,
+    "facility": "aerospace_plant",
+    "facility_level": 1,
+    "inputs": {
+      "vector_composite": 12,
+      "vector_core": 2,
+      "flux_cell": 2,
+      "atlas_drive": 2
+    },
+    "output": {
+      "item_id": "heron_lifter",
+      "quantity": 1
+    }
+  },
+  "assemble_triton_corvette": {
+    "name": "Montar Corveta Triton",
+    "required_level": 135,
+    "energy_cost": 300,
+    "duration_seconds": 5400,
+    "base_quality": 80,
+    "facility": "naval_yard",
+    "facility_level": 1,
+    "inputs": {
+      "aegis_alloy": 30,
+      "vector_core": 3,
+      "orion_sensor": 3,
+      "flux_cell": 4,
+      "atlas_drive": 3
+    },
+    "output": {
+      "item_id": "triton_corvette",
+      "quantity": 1
+    }
+  },
+  "assemble_abyss_submersible": {
+    "name": "Montar Submersível Abyss",
+    "required_level": 165,
+    "energy_cost": 380,
+    "duration_seconds": 7200,
+    "base_quality": 82,
+    "facility": "naval_yard",
+    "facility_level": 2,
+    "inputs": {
+      "aegis_alloy": 36,
+      "vector_composite": 18,
+      "vector_core": 4,
+      "orion_sensor": 4,
+      "flux_cell": 6,
+      "atlas_drive": 4
+    },
+    "output": {
+      "item_id": "abyss_submersible",
+      "quantity": 1
+    }
+  },
+  "assemble_nova_interceptor_system": {
+    "name": "Montar Sistema Nova",
+    "required_level": 125,
+    "energy_cost": 220,
+    "duration_seconds": 4200,
+    "base_quality": 79,
+    "facility": "strategic_systems_plant",
+    "facility_level": 1,
+    "inputs": {
+      "aegis_plating": 3,
+      "vector_core": 3,
+      "orion_sensor": 2,
+      "flux_cell": 3
+    },
+    "output": {
+      "item_id": "nova_interceptor_system",
+      "quantity": 1
+    }
+  },
+  "assemble_aegis_defense_node": {
+    "name": "Montar Nó de Defesa Aegis",
+    "required_level": 145,
+    "energy_cost": 260,
+    "duration_seconds": 4800,
+    "base_quality": 82,
+    "facility": "strategic_systems_plant",
+    "facility_level": 2,
+    "inputs": {
+      "aegis_plating": 5,
+      "vector_core": 4,
+      "orion_sensor": 4,
+      "flux_cell": 4
+    },
+    "output": {
+      "item_id": "aegis_defense_node",
+      "quantity": 1
+    }
+  }
+}

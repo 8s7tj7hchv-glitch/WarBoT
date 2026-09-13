@@ -1,0 +1,60 @@
+{
+    "craft_utility_vehicle": {
+        "name": "Montar Veículo Utilitário",
+        "required_level": 25,
+        "energy_cost": 30,
+        "duration_seconds": 240,
+        "base_quality": 60,
+        "inputs": {
+            "vehicle_chassis": 1,
+            "mechanical_motor": 1,
+            "wheel": 4,
+            "industrial_tire": 4,
+            "battery": 1
+        },
+        "output": {
+            "item_id": "utility_vehicle",
+            "quantity": 1
+        }
+    },
+
+    "craft_small_truck": {
+        "name": "Montar Caminhão Leve",
+        "required_level": 35,
+        "energy_cost": 40,
+        "duration_seconds": 360,
+        "base_quality": 62,
+        "inputs": {
+            "vehicle_chassis": 1,
+            "mechanical_motor": 2,
+            "transmission": 1,
+            "axle": 2,
+            "wheel": 6,
+            "industrial_tire": 6
+        },
+        "output": {
+            "item_id": "small_truck",
+            "quantity": 1
+        }
+    },
+
+    "craft_medium_truck": {
+        "name": "Montar Caminhão Médio",
+        "required_level": 45,
+        "energy_cost": 55,
+        "duration_seconds": 480,
+        "base_quality": 65,
+        "inputs": {
+            "vehicle_chassis": 2,
+            "mechanical_motor": 2,
+            "transmission": 1,
+            "axle": 3,
+            "industrial_tire": 8,
+            "control_unit": 1
+        },
+        "output": {
+            "item_id": "medium_truck",
+            "quantity": 1
+        }
+    }
+}

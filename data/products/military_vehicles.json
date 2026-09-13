@@ -1,0 +1,36 @@
+{
+  "guardian_apc": {
+    "name": "Guardian APC",
+    "emoji": "🛡️",
+    "description": "Veículo blindado fictício de transporte e apoio.",
+    "rarity": "rare",
+    "base_price": 165000,
+    "weight": 12,
+    "weight_unit": "game_tons",
+    "required_level": 70,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "military_depot",
+    "production_category": "military_vehicles",
+    "technology_level": 3,
+    "logistics_class": "heavy"
+  },
+  "titan_support_vehicle": {
+    "name": "Titan de Apoio",
+    "emoji": "🚛",
+    "description": "Plataforma terrestre fictícia para logística e apoio estratégico.",
+    "rarity": "epic",
+    "base_price": 240000,
+    "weight": 18,
+    "weight_unit": "game_tons",
+    "required_level": 85,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "military_depot",
+    "production_category": "military_vehicles",
+    "technology_level": 4,
+    "logistics_class": "heavy"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "research_center": {
+    "name": "Centro de Pesquisa Estratégica",
+    "emoji": "🔬",
+    "facility": null,
+    "base_cost": 85000,
+    "max_level": 5,
+    "research_bonus": 0.08,
+    "description": "Gera bônus abstrato para pesquisa tecnológica do país."
+  },
+  "component_complex": {
+    "name": "Complexo de Componentes",
+    "emoji": "🧪",
+    "facility": "component_lab",
+    "base_cost": 140000,
+    "max_level": 5,
+    "required_technology": "industrial_foundations",
+    "description": "Produz componentes estratégicos fictícios."
+  },
+  "strategic_factory": {
+    "name": "Complexo Industrial Estratégico",
+    "emoji": "🏭",
+    "facility": "military_factory",
+    "base_cost": 240000,
+    "max_level": 5,
+    "required_technology": "industrial_foundations",
+    "description": "Produz estruturas e sistemas abstratos de uso militar no jogo."
+  },
+  "electronics_complex": {
+    "name": "Complexo Eletrônico Orion",
+    "emoji": "📡",
+    "facility": "electronics_center",
+    "base_cost": 200000,
+    "max_level": 5,
+    "required_technology": "advanced_electronics",
+    "description": "Produz sensores e módulos fictícios."
+  },
+  "vehicle_complex": {
+    "name": "Complexo de Veículos Guardian",
+    "emoji": "🚛",
+    "facility": "vehicle_works",
+    "base_cost": 330000,
+    "max_level": 5,
+    "required_technology": "mechanized_industry",
+    "description": "Monta veículos militares fictícios."
+  },
+  "aerospace_complex": {
+    "name": "Complexo Aeroespacial Falcon",
+    "emoji": "✈️",
+    "facility": "aerospace_plant",
+    "base_cost": 520000,
+    "max_level": 5,
+    "required_technology": "aerospace_industry",
+    "description": "Monta aeronaves fictícias."
+  },
+  "naval_complex": {
+    "name": "Complexo Naval Triton",
+    "emoji": "⚓",
+    "facility": "naval_yard",
+    "base_cost": 680000,
+    "max_level": 5,
+    "required_technology": "naval_industry",
+    "description": "Monta embarcações e submersíveis fictícios."
+  },
+  "strategic_systems_complex": {
+    "name": "Complexo de Sistemas Aegis",
+    "emoji": "🛰️",
+    "facility": "strategic_systems_plant",
+    "base_cost": 620000,
+    "max_level": 5,
+    "required_technology": "strategic_systems",
+    "description": "Monta sistemas defensivos abstratos de jogo."
+  },
+  "national_depot": {
+    "name": "Depósito Nacional Estratégico",
+    "emoji": "📦",
+    "facility": null,
+    "base_cost": 180000,
+    "max_level": 5,
+    "storage_bonus": 100000,
+    "description": "Amplia a capacidade do estoque nacional de materiais e equipamentos."
+  }
+}

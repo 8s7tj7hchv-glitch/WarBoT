@@ -1,0 +1,241 @@
+{
+    "gear": {
+        "name": "Engrenagem",
+        "emoji": "⚙️",
+        "description": "Componente mecânico básico.",
+        "rarity": "common",
+        "base_price": 95,
+        "weight": 0.8,
+        "required_level": 1,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "bearing": {
+        "name": "Rolamento",
+        "emoji": "⚙️",
+        "description": "Componente usado em máquinas e veículos.",
+        "rarity": "common",
+        "base_price": 80,
+        "weight": 0.4,
+        "required_level": 1,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "steel_bolt": {
+        "name": "Parafuso de Aço",
+        "emoji": "🔩",
+        "description": "Elemento básico de fixação.",
+        "rarity": "common",
+        "base_price": 15,
+        "weight": 0.1,
+        "required_level": 1,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "steel_spring": {
+        "name": "Mola Industrial",
+        "emoji": "🌀",
+        "description": "Mola utilizada em equipamentos mecânicos.",
+        "rarity": "common",
+        "base_price": 48,
+        "weight": 0.25,
+        "required_level": 2,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "valve": {
+        "name": "Válvula Industrial",
+        "emoji": "🔧",
+        "description": "Componente para controle de fluidos.",
+        "rarity": "common",
+        "base_price": 110,
+        "weight": 0.7,
+        "required_level": 3,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "hydraulic_piston": {
+        "name": "Pistão Hidráulico",
+        "emoji": "🔩",
+        "description": "Componente utilizado em máquinas pesadas.",
+        "rarity": "uncommon",
+        "base_price": 240,
+        "weight": 2.0,
+        "required_level": 5,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_pump": {
+        "name": "Bomba Industrial",
+        "emoji": "⚙️",
+        "description": "Componente para sistemas industriais.",
+        "rarity": "uncommon",
+        "base_price": 350,
+        "weight": 4.0,
+        "required_level": 7,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "electric_motor": {
+        "name": "Motor Elétrico",
+        "emoji": "⚡",
+        "description": "Motor utilizado em máquinas industriais.",
+        "rarity": "uncommon",
+        "base_price": 520,
+        "weight": 6.0,
+        "required_level": 8,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "mechanical_motor": {
+        "name": "Motor Mecânico",
+        "emoji": "⚙️",
+        "description": "Motor utilizado em veículos e máquinas.",
+        "rarity": "uncommon",
+        "base_price": 650,
+        "weight": 9.0,
+        "required_level": 10,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "battery": {
+        "name": "Bateria Industrial",
+        "emoji": "🔋",
+        "description": "Unidade de armazenamento de energia.",
+        "rarity": "uncommon",
+        "base_price": 310,
+        "weight": 3.0,
+        "required_level": 6,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "circuit_board": {
+        "name": "Placa Eletrônica",
+        "emoji": "🟩",
+        "description": "Componente eletrônico industrial.",
+        "rarity": "uncommon",
+        "base_price": 280,
+        "weight": 0.3,
+        "required_level": 8,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "control_unit": {
+        "name": "Unidade de Controle",
+        "emoji": "🖥️",
+        "description": "Controlador eletrônico para máquinas.",
+        "rarity": "rare",
+        "base_price": 750,
+        "weight": 1.0,
+        "required_level": 15,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "sensor": {
+        "name": "Sensor Industrial",
+        "emoji": "📡",
+        "description": "Sensor utilizado em automação.",
+        "rarity": "uncommon",
+        "base_price": 220,
+        "weight": 0.2,
+        "required_level": 8,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "generator_coil": {
+        "name": "Bobina de Gerador",
+        "emoji": "🧲",
+        "description": "Componente de sistemas de geração elétrica.",
+        "rarity": "uncommon",
+        "base_price": 340,
+        "weight": 2.5,
+        "required_level": 10,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_filter": {
+        "name": "Filtro Industrial",
+        "emoji": "🔳",
+        "description": "Filtro usado em equipamentos industriais.",
+        "rarity": "common",
+        "base_price": 130,
+        "weight": 0.8,
+        "required_level": 4,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "transmission": {
+        "name": "Transmissão Mecânica",
+        "emoji": "⚙️",
+        "description": "Sistema utilizado em máquinas e veículos.",
+        "rarity": "rare",
+        "base_price": 900,
+        "weight": 12.0,
+        "required_level": 18,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "axle": {
+        "name": "Eixo Mecânico",
+        "emoji": "🔩",
+        "description": "Eixo para veículos e equipamentos.",
+        "rarity": "common",
+        "base_price": 260,
+        "weight": 5.0,
+        "required_level": 6,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "wheel": {
+        "name": "Roda Industrial",
+        "emoji": "⚫",
+        "description": "Roda utilizada em veículos e máquinas.",
+        "rarity": "common",
+        "base_price": 190,
+        "weight": 4.0,
+        "required_level": 4,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_tire": {
+        "name": "Pneu Industrial",
+        "emoji": "🛞",
+        "description": "Pneu para veículos pesados.",
+        "rarity": "common",
+        "base_price": 240,
+        "weight": 5.0,
+        "required_level": 5,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "vehicle_chassis": {
+        "name": "Chassi de Veículo",
+        "emoji": "🚙",
+        "description": "Estrutura principal para fabricação de veículos.",
+        "rarity": "uncommon",
+        "base_price": 1100,
+        "weight": 30.0,
+        "required_level": 15,
+        "tradeable": true,
+        "storable": true
+    }
+}

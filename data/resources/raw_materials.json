@@ -1,0 +1,131 @@
+{
+    "wood": {
+        "name": "Madeira",
+        "emoji": "🪵",
+        "description": "Matéria-prima vegetal usada em construção e produção.",
+        "rarity": "common",
+        "base_price": 8,
+        "weight": 1.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "sand": {
+        "name": "Areia",
+        "emoji": "🏖️",
+        "description": "Material utilizado em vidro, concreto e construção.",
+        "rarity": "common",
+        "base_price": 3,
+        "weight": 2.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "clay": {
+        "name": "Argila",
+        "emoji": "🟤",
+        "description": "Material usado na fabricação de tijolos e cerâmica.",
+        "rarity": "common",
+        "base_price": 5,
+        "weight": 1.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "limestone": {
+        "name": "Calcário",
+        "emoji": "🪨",
+        "description": "Rocha utilizada na fabricação de cimento.",
+        "rarity": "common",
+        "base_price": 7,
+        "weight": 2.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "coal": {
+        "name": "Carvão",
+        "emoji": "⚫",
+        "description": "Recurso energético e industrial.",
+        "rarity": "common",
+        "base_price": 12,
+        "weight": 1.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "crude_oil": {
+        "name": "Óleo Bruto Industrial",
+        "emoji": "🛢️",
+        "description": "Recurso industrial fictício usado em combustíveis e polímeros do jogo.",
+        "rarity": "uncommon",
+        "base_price": 28,
+        "weight": 0.9,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "natural_gas": {
+        "name": "Gás Industrial",
+        "emoji": "💨",
+        "description": "Recurso energético fictício usado por indústrias.",
+        "rarity": "uncommon",
+        "base_price": 24,
+        "weight": 0.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "rubber": {
+        "name": "Borracha Natural",
+        "emoji": "🟫",
+        "description": "Material usado em pneus, vedação e equipamentos.",
+        "rarity": "common",
+        "base_price": 14,
+        "weight": 0.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "cotton": {
+        "name": "Algodão",
+        "emoji": "☁️",
+        "description": "Fibra utilizada em produtos têxteis e industriais.",
+        "rarity": "common",
+        "base_price": 9,
+        "weight": 0.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "silica": {
+        "name": "Sílica",
+        "emoji": "▫️",
+        "description": "Material usado em vidro e componentes industriais.",
+        "rarity": "uncommon",
+        "base_price": 18,
+        "weight": 1.6,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    }
+}

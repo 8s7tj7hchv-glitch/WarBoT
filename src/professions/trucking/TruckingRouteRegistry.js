@@ -1,0 +1,1 @@
+import path from 'node:path';import { TRUCKING_DATA_DIR } from '../../config/settings.js';import { JsonRegistry } from '../JsonRegistry.js';export class TruckingRouteRegistry extends JsonRegistry{constructor(){super(path.join(TRUCKING_DATA_DIR,'routes.json'));}}

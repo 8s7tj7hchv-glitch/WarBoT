@@ -1,0 +1,1 @@
+export class MarketMatchingEngine { constructor(market){this.market=market;} matchBuyOrder(buyerId,buyOrderId){return this.market.matchBuyOrder(buyerId,buyOrderId);} matchSellOrder(sellerId,sellOrderId){return this.market.matchSellOrder(sellerId,sellOrderId);} }

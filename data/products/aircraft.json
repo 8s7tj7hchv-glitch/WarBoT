@@ -1,0 +1,36 @@
+{
+  "falcon_x": {
+    "name": "Falcon X",
+    "emoji": "✈️",
+    "description": "Aeronave militar fictícia com atributos abstratos de jogo.",
+    "rarity": "epic",
+    "base_price": 420000,
+    "weight": 1,
+    "weight_unit": "airframe",
+    "required_level": 100,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "hangar",
+    "production_category": "aircraft",
+    "technology_level": 4,
+    "logistics_class": "oversized"
+  },
+  "heron_lifter": {
+    "name": "Heron Lifter",
+    "emoji": "🛩️",
+    "description": "Aeronave fictícia voltada a transporte estratégico.",
+    "rarity": "rare",
+    "base_price": 310000,
+    "weight": 1,
+    "weight_unit": "airframe",
+    "required_level": 90,
+    "tradeable": true,
+    "storable": true,
+    "requires_special_storage": true,
+    "storage_type": "hangar",
+    "production_category": "aircraft",
+    "technology_level": 3,
+    "logistics_class": "oversized"
+  }
+}

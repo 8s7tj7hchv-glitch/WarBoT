@@ -1,0 +1,105 @@
+{
+    "utility_vehicle": {
+        "name": "Veículo Utilitário",
+        "emoji": "🚙",
+        "description": "Veículo leve para transporte e serviços.",
+        "rarity": "common",
+        "base_price": 12000,
+        "weight": 900.0,
+        "required_level": 10,
+        "cargo_capacity": 500,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "small_truck": {
+        "name": "Caminhão Leve",
+        "emoji": "🚚",
+        "description": "Caminhão para pequenas cargas.",
+        "rarity": "common",
+        "base_price": 22000,
+        "weight": 1800.0,
+        "required_level": 15,
+        "cargo_capacity": 2500,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "medium_truck": {
+        "name": "Caminhão Médio",
+        "emoji": "🚚",
+        "description": "Veículo de transporte de médio porte.",
+        "rarity": "uncommon",
+        "base_price": 42000,
+        "weight": 3500.0,
+        "required_level": 25,
+        "cargo_capacity": 6000,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "heavy_truck": {
+        "name": "Caminhão Pesado",
+        "emoji": "🚛",
+        "description": "Veículo pesado para transporte industrial.",
+        "rarity": "rare",
+        "base_price": 75000,
+        "weight": 6000.0,
+        "required_level": 40,
+        "cargo_capacity": 15000,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "mining_truck": {
+        "name": "Caminhão de Mineração",
+        "emoji": "🚜",
+        "description": "Veículo especializado em transporte de minério.",
+        "rarity": "rare",
+        "base_price": 110000,
+        "weight": 9500.0,
+        "required_level": 55,
+        "cargo_capacity": 30000,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "construction_vehicle": {
+        "name": "Veículo de Construção",
+        "emoji": "🚜",
+        "description": "Veículo utilizado em grandes construções.",
+        "rarity": "uncommon",
+        "base_price": 65000,
+        "weight": 5000.0,
+        "required_level": 35,
+        "cargo_capacity": 3000,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "mobile_crane": {
+        "name": "Guindaste Móvel",
+        "emoji": "🏗️",
+        "description": "Veículo para operações de construção pesada.",
+        "rarity": "rare",
+        "base_price": 95000,
+        "weight": 8000.0,
+        "required_level": 45,
+        "cargo_capacity": 1000,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "service_truck": {
+        "name": "Caminhão Oficina",
+        "emoji": "🔧",
+        "description": "Veículo equipado para manutenção mecânica.",
+        "rarity": "uncommon",
+        "base_price": 48000,
+        "weight": 3200.0,
+        "required_level": 30,
+        "cargo_capacity": 3500,
+        "tradeable": true,
+        "storable": true
+    }
+}

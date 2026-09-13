@@ -1,0 +1,4 @@
+import { SlashCommandBuilder } from 'discord.js';
+import { WorldWarManager } from '../global_war/WorldWarManager.js';
+const wars=new WorldWarManager();
+export default{data:new SlashCommandBuilder().setName('encerrarguerramundial').setDescription('Encerra uma guerra mundial de jogo.').addStringOption(o=>o.setName('guerra').setDescription('ID da guerra mundial').setRequired(true)),async execute(i){try{const w=wars.end({warId:i.options.getString('guerra',true),actorId:i.user.id});const winner=w.winner_side==='draw'?'empate':`Bloco ${w.winner_side.toUpperCase()}`;await i.reply({content:`🏁 **${w.name}** encerrada. Resultado: **${winner}** (${w.score_a} × ${w.score_b}).`,ephemeral:true})}catch(e){await i.reply({content:`❌ ${e.message}`,ephemeral:true})}}};

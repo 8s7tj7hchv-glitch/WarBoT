@@ -1,0 +1,73 @@
+{
+    "local_01": {
+        "name": "Distrito Industrial → Centro Comercial",
+        "emoji": "🏙️",
+        "origin": "Distrito Industrial",
+        "destination": "Centro Comercial",
+        "distance": 25,
+        "required_level": 1,
+        "difficulty": "easy",
+        "payment_multiplier": 1.0,
+        "fuel_multiplier": 1.0
+    },
+
+    "local_02": {
+        "name": "Mina Norte → Distrito Industrial",
+        "emoji": "⛏️",
+        "origin": "Mina Norte",
+        "destination": "Distrito Industrial",
+        "distance": 40,
+        "required_level": 3,
+        "difficulty": "easy",
+        "payment_multiplier": 1.1,
+        "fuel_multiplier": 1.0
+    },
+
+    "regional_01": {
+        "name": "Região Central → Zona Portuária",
+        "emoji": "🚛",
+        "origin": "Região Central",
+        "destination": "Zona Portuária",
+        "distance": 120,
+        "required_level": 10,
+        "difficulty": "medium",
+        "payment_multiplier": 1.3,
+        "fuel_multiplier": 1.1
+    },
+
+    "regional_02": {
+        "name": "Complexo Mineiro → Cidade Industrial",
+        "emoji": "🏭",
+        "origin": "Complexo Mineiro",
+        "destination": "Cidade Industrial",
+        "distance": 180,
+        "required_level": 20,
+        "difficulty": "medium",
+        "payment_multiplier": 1.5,
+        "fuel_multiplier": 1.2
+    },
+
+    "long_haul_01": {
+        "name": "Capital → Fronteira Oeste",
+        "emoji": "🛣️",
+        "origin": "Capital",
+        "destination": "Fronteira Oeste",
+        "distance": 450,
+        "required_level": 40,
+        "difficulty": "hard",
+        "payment_multiplier": 1.9,
+        "fuel_multiplier": 1.35
+    },
+
+    "continental_01": {
+        "name": "Centro Logístico → Porto Internacional",
+        "emoji": "🌍",
+        "origin": "Centro Logístico",
+        "destination": "Porto Internacional",
+        "distance": 900,
+        "required_level": 75,
+        "difficulty": "expert",
+        "payment_multiplier": 2.5,
+        "fuel_multiplier": 1.5
+    }
+}

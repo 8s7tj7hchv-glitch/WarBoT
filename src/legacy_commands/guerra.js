@@ -1,0 +1,5 @@
+import { EmbedBuilder, SlashCommandBuilder } from 'discord.js';
+import { EMBED_COLOR } from '../config/settings.js';
+import { WarHubService } from '../warfare/WarHubService.js';
+const hub=new WarHubService();
+export default{data:new SlashCommandBuilder().setName('guerra').setDescription('Mostra o painel de guerra abstrato do seu país.'),async execute(i){const d=hub.dashboard(i.user.id);if(!d.country)return i.reply({content:'❌ Você não pertence a um país.',ephemeral:true});const lines=d.conflicts?.slice(0,5).map(c=>`• ${c.id.slice(0,16)}… • placar ${c.attacker_score}-${c.defender_score} • ${c.battles} batalha(s)`).join('\n')||'Nenhum conflito ativo.';const e=new EmbedBuilder().setColor(EMBED_COLOR).setTitle(`⚔️ Guerra • ${d.country.name}`).setDescription('Combate resolvido apenas por estatísticas abstratas de jogo.').addFields({name:'Conflitos ativos',value:String(d.active_conflicts),inline:true},{name:'Batalhas',value:String(d.battles),inline:true},{name:'Territórios controlados',value:String(d.controlled),inline:true},{name:'Conflitos',value:lines});await i.reply({embeds:[e],ephemeral:true})}};

@@ -1,0 +1,181 @@
+{
+    "warehouse_1": {
+        "name": "Construir Armazém Nível 1",
+        "emoji": "📦",
+        "building_id": "warehouse",
+        "target_level": 1,
+        "required_level": 1,
+        "energy_cost": 10,
+        "cooldown": 30,
+        "base_xp": 40,
+        "money_cost": 1500,
+        "materials": {
+            "concrete": 20,
+            "steel_beam": 5,
+            "brick": 20
+        }
+    },
+
+    "warehouse_2": {
+        "name": "Expandir Armazém para Nível 2",
+        "emoji": "📦",
+        "building_id": "warehouse",
+        "target_level": 2,
+        "required_level": 10,
+        "energy_cost": 15,
+        "cooldown": 45,
+        "base_xp": 70,
+        "money_cost": 5000,
+        "materials": {
+            "concrete": 50,
+            "steel_beam": 12,
+            "metal_frame": 5
+        }
+    },
+
+    "warehouse_3": {
+        "name": "Expandir Armazém para Nível 3",
+        "emoji": "🏢",
+        "building_id": "warehouse",
+        "target_level": 3,
+        "required_level": 30,
+        "energy_cost": 20,
+        "cooldown": 60,
+        "base_xp": 120,
+        "money_cost": 15000,
+        "materials": {
+            "concrete": 120,
+            "steel_beam": 30,
+            "metal_frame": 15,
+            "electrical_panel": 2
+        }
+    },
+
+    "industrial_storage_1": {
+        "name": "Construir Estoque Industrial",
+        "emoji": "🏭",
+        "building_id": "industrial_storage",
+        "target_level": 1,
+        "required_level": 20,
+        "energy_cost": 18,
+        "cooldown": 60,
+        "base_xp": 100,
+        "money_cost": 10000,
+        "materials": {
+            "concrete": 80,
+            "steel_beam": 20,
+            "warehouse_module": 2,
+            "electrical_panel": 1
+        }
+    },
+
+    "garage_1": {
+        "name": "Construir Garagem",
+        "emoji": "🚚",
+        "building_id": "garage",
+        "target_level": 1,
+        "required_level": 5,
+        "energy_cost": 12,
+        "cooldown": 35,
+        "base_xp": 50,
+        "money_cost": 2500,
+        "materials": {
+            "concrete": 25,
+            "steel_beam": 8,
+            "industrial_door": 1
+        }
+    },
+
+    "garage_2": {
+        "name": "Expandir Garagem",
+        "emoji": "🚛",
+        "building_id": "garage",
+        "target_level": 2,
+        "required_level": 25,
+        "energy_cost": 18,
+        "cooldown": 55,
+        "base_xp": 90,
+        "money_cost": 9000,
+        "materials": {
+            "concrete": 60,
+            "steel_beam": 20,
+            "industrial_door": 2,
+            "metal_frame": 5
+        }
+    },
+
+    "workshop_1": {
+        "name": "Construir Oficina Mecânica",
+        "emoji": "🔧",
+        "building_id": "workshop",
+        "target_level": 1,
+        "required_level": 15,
+        "energy_cost": 16,
+        "cooldown": 50,
+        "base_xp": 85,
+        "money_cost": 7500,
+        "materials": {
+            "concrete": 45,
+            "steel_beam": 12,
+            "electrical_panel": 1,
+            "industrial_pipe": 4
+        }
+    },
+
+    "factory_1": {
+        "name": "Construir Fábrica",
+        "emoji": "🏭",
+        "building_id": "factory",
+        "target_level": 1,
+        "required_level": 40,
+        "energy_cost": 25,
+        "cooldown": 90,
+        "base_xp": 180,
+        "money_cost": 30000,
+        "materials": {
+            "factory_module": 2,
+            "concrete": 150,
+            "steel_beam": 40,
+            "electrical_panel": 4,
+            "industrial_pipe": 10
+        }
+    },
+
+    "logistics_center_1": {
+        "name": "Construir Centro Logístico",
+        "emoji": "🚛",
+        "building_id": "logistics_center",
+        "target_level": 1,
+        "required_level": 60,
+        "energy_cost": 30,
+        "cooldown": 120,
+        "base_xp": 250,
+        "money_cost": 60000,
+        "materials": {
+            "warehouse_module": 4,
+            "loading_platform": 4,
+            "concrete": 250,
+            "steel_beam": 60,
+            "electrical_panel": 6
+        }
+    },
+
+    "power_station_1": {
+        "name": "Construir Central de Energia",
+        "emoji": "⚡",
+        "building_id": "power_station",
+        "target_level": 1,
+        "required_level": 80,
+        "energy_cost": 35,
+        "cooldown": 150,
+        "base_xp": 320,
+        "money_cost": 100000,
+        "materials": {
+            "basic_generator": 3,
+            "factory_module": 2,
+            "concrete": 300,
+            "steel_beam": 80,
+            "copper_cable": 20
+        }
+    }
+}

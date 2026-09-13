@@ -1,0 +1,196 @@
+{
+    "iron_ore": {
+        "name": "Minério de Ferro",
+        "emoji": "⛏️",
+        "description": "Minério utilizado na produção de ferro e aço.",
+        "rarity": "common",
+        "base_price": 16,
+        "weight": 2.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "copper_ore": {
+        "name": "Minério de Cobre",
+        "emoji": "🟠",
+        "description": "Minério usado na produção de cobre refinado.",
+        "rarity": "common",
+        "base_price": 22,
+        "weight": 2.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "bauxite": {
+        "name": "Bauxita",
+        "emoji": "🟤",
+        "description": "Minério utilizado na produção de alumínio.",
+        "rarity": "common",
+        "base_price": 19,
+        "weight": 2.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "zinc_ore": {
+        "name": "Minério de Zinco",
+        "emoji": "⚙️",
+        "description": "Minério utilizado em ligas e proteção de metais.",
+        "rarity": "uncommon",
+        "base_price": 25,
+        "weight": 2.1,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "tin_ore": {
+        "name": "Minério de Estanho",
+        "emoji": "⬜",
+        "description": "Minério usado em ligas e componentes.",
+        "rarity": "uncommon",
+        "base_price": 30,
+        "weight": 2.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "nickel_ore": {
+        "name": "Minério de Níquel",
+        "emoji": "🔘",
+        "description": "Minério utilizado em ligas metálicas resistentes.",
+        "rarity": "uncommon",
+        "base_price": 38,
+        "weight": 2.4,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "manganese_ore": {
+        "name": "Minério de Manganês",
+        "emoji": "⚫",
+        "description": "Minério usado na produção de ligas industriais.",
+        "rarity": "uncommon",
+        "base_price": 32,
+        "weight": 2.4,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "lead_ore": {
+        "name": "Minério de Chumbo",
+        "emoji": "◼️",
+        "description": "Minério industrial usado em vários componentes.",
+        "rarity": "uncommon",
+        "base_price": 26,
+        "weight": 3.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "quartz": {
+        "name": "Quartzo",
+        "emoji": "💎",
+        "description": "Mineral usado em vidro e eletrônica.",
+        "rarity": "uncommon",
+        "base_price": 35,
+        "weight": 1.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "titanium_ore": {
+        "name": "Minério de Titânio",
+        "emoji": "🔩",
+        "description": "Minério raro utilizado em ligas avançadas.",
+        "rarity": "rare",
+        "base_price": 85,
+        "weight": 2.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "silver_ore": {
+        "name": "Minério de Prata",
+        "emoji": "🥈",
+        "description": "Minério valioso utilizado em eletrônica e comércio.",
+        "rarity": "rare",
+        "base_price": 120,
+        "weight": 2.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "gold_ore": {
+        "name": "Minério de Ouro",
+        "emoji": "🥇",
+        "description": "Minério valioso usado em eletrônica e reserva de valor.",
+        "rarity": "rare",
+        "base_price": 220,
+        "weight": 2.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "lithium_ore": {
+        "name": "Minério de Lítio",
+        "emoji": "🔋",
+        "description": "Minério usado na indústria de baterias.",
+        "rarity": "rare",
+        "base_price": 95,
+        "weight": 1.6,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "cobalt_ore": {
+        "name": "Minério de Cobalto",
+        "emoji": "🔵",
+        "description": "Mineral utilizado em ligas e baterias.",
+        "rarity": "rare",
+        "base_price": 110,
+        "weight": 2.1,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "chromium_ore": {
+        "name": "Minério de Cromo",
+        "emoji": "⚙️",
+        "description": "Minério utilizado em ligas resistentes.",
+        "rarity": "uncommon",
+        "base_price": 48,
+        "weight": 2.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    }
+}

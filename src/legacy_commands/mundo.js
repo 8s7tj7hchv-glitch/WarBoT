@@ -1,0 +1,5 @@
+import { EmbedBuilder, SlashCommandBuilder } from 'discord.js';
+import { EMBED_COLOR } from '../config/settings.js';
+import { WorldHubService } from '../world/WorldHubService.js';
+const hub = new WorldHubService();
+export default { data: new SlashCommandBuilder().setName('mundo').setDescription('Mostra o estado mundial da Fase 4.'), async execute(i) { const d = hub.dashboard(i.user.id); const e = new EmbedBuilder().setColor(EMBED_COLOR).setTitle('🌍 Mundo • Países e Territórios').addFields({ name: 'Países', value: String(d.countries), inline: true }, { name: 'Territórios', value: String(d.territories), inline: true }, { name: 'Neutros', value: String(d.neutral), inline: true }, { name: 'Fronteiras', value: String(d.borders), inline: true }, { name: 'Seu país', value: d.country ? `${d.country.emoji} ${d.country.name}` : 'Nenhum', inline: false }, { name: 'Seu controle', value: d.country ? `Propriedade: **${d.owned}** • Controle: **${d.controlled}** • Infraestrutura: **${d.infrastructure_score}**` : 'Entre em um país para participar do mapa.', inline: false }); await i.reply({ embeds: [e], ephemeral: true }); } };

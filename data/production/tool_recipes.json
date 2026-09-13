@@ -1,0 +1,81 @@
+{
+    "craft_basic_pickaxe": {
+        "name": "Fabricar Picareta Básica",
+        "required_level": 1,
+        "energy_cost": 5,
+        "duration_seconds": 20,
+        "base_quality": 50,
+        "inputs": {
+            "iron": 2,
+            "wood": 1
+        },
+        "output": {
+            "item_id": "basic_pickaxe",
+            "quantity": 1
+        }
+    },
+
+    "craft_steel_pickaxe": {
+        "name": "Fabricar Picareta de Aço",
+        "required_level": 10,
+        "energy_cost": 8,
+        "duration_seconds": 40,
+        "base_quality": 60,
+        "inputs": {
+            "steel": 3,
+            "wood": 1
+        },
+        "output": {
+            "item_id": "steel_pickaxe",
+            "quantity": 1
+        }
+    },
+
+    "craft_hammer": {
+        "name": "Fabricar Martelo",
+        "required_level": 2,
+        "energy_cost": 4,
+        "duration_seconds": 18,
+        "base_quality": 50,
+        "inputs": {
+            "iron": 2,
+            "wood": 1
+        },
+        "output": {
+            "item_id": "hammer",
+            "quantity": 1
+        }
+    },
+
+    "craft_wrench": {
+        "name": "Fabricar Chave Mecânica",
+        "required_level": 4,
+        "energy_cost": 4,
+        "duration_seconds": 20,
+        "base_quality": 52,
+        "inputs": {
+            "steel": 2
+        },
+        "output": {
+            "item_id": "wrench",
+            "quantity": 1
+        }
+    },
+
+    "craft_toolbox": {
+        "name": "Fabricar Caixa de Ferramentas",
+        "required_level": 12,
+        "energy_cost": 10,
+        "duration_seconds": 50,
+        "base_quality": 60,
+        "inputs": {
+            "steel": 3,
+            "wrench": 1,
+            "hammer": 1
+        },
+        "output": {
+            "item_id": "toolbox",
+            "quantity": 1
+        }
+    }
+}

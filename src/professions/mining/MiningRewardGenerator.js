@@ -1,0 +1,4 @@
+export class MiningRewardGenerator {
+  static chooseResource(resources={}) { const entries=Object.entries(resources).filter(([,w])=>Number(w)>0); if(!entries.length)return null; const total=entries.reduce((s,[,w])=>s+Number(w),0); let roll=Math.random()*total; for(const [id,w] of entries){roll-=Number(w);if(roll<=0)return id;} return entries.at(-1)[0]; }
+  generate(zone, quantityBonus=0, qualityBonus=0) { const resourceId=MiningRewardGenerator.chooseResource(zone.resources); if(!resourceId)return null; const rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a; const q=Math.max(1,rnd(Number(zone.quantity_min??1),Number(zone.quantity_max??1))+Math.max(0,quantityBonus)); const quality=Math.min(100,rnd(Number(zone.quality_min??1),Number(zone.quality_max??100))+Math.max(0,qualityBonus)); return {resource_id:resourceId,quantity:q,quality}; }
+}

@@ -1,0 +1,5 @@
+import { SlashCommandBuilder } from 'discord.js';
+import { CountryManager } from '../world/CountryManager.js';
+import { DeploymentManager } from '../military/DeploymentManager.js';
+const countries=new CountryManager(),deploy=new DeploymentManager();
+export default{data:new SlashCommandBuilder().setName('estacionarunidade').setDescription('Move uma unidade entre territórios já controlados pelo país.').addStringOption(o=>o.setName('unidade').setDescription('ID da unidade').setRequired(true)).addStringOption(o=>o.setName('territorio').setDescription('ID do território de destino').setRequired(true)),async execute(i){try{const c=countries.memberCountry(i.user.id);if(!c)throw new Error('Você não pertence a um país.');if(c.leader_id!==String(i.user.id))throw new Error('Somente o líder pode estacionar unidades.');const u=deploy.stationUnit(i.options.getString('unidade'),i.options.getString('territorio'),i.user.id);if(u.country_id!==c.id)throw new Error('Essa unidade não pertence ao seu país.');await i.reply({content:`✅ **${u.name}** estacionada em **${u.territory_id}**.`,ephemeral:true})}catch(e){await i.reply({content:`❌ ${e.message}`,ephemeral:true})}}};

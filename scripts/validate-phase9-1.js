@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const __dirname=path.dirname(fileURLToPath(import.meta.url));
+const root=path.resolve(__dirname,'..');
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const channels=read('data/notifications/guild_channels.json');
+const settings=read('data/notifications/notification_settings.json');
+const trades=read('data/trades/player_trades.json');
+if(!channels || Array.isArray(channels) || typeof channels!=='object') throw new Error('guild_channels.json deve ser objeto.');
+if(!settings || Array.isArray(settings) || typeof settings!=='object') throw new Error('notification_settings.json deve ser objeto.');
+if(!Array.isArray(trades)) throw new Error('player_trades.json deve ser array.');
+for(const f of ['src/notifications/GameChannelManager.js','src/notifications/NotificationManager.js','src/notifications/MarketNotificationService.js','src/notifications/TradeNotificationService.js','src/notifications/WarNotificationService.js','src/notifications/WorldNotificationService.js','src/trades/PlayerTradeManager.js','src/trades/TradeHubService.js','src/legacy_commands/configurarcanais.js','src/legacy_commands/trocar.js']) if(!fs.existsSync(path.join(root,f))) throw new Error(`Arquivo ausente: ${f}`);
+console.log('✅ Fase 9.1 válida: canais, notificações e trocas P2P encontrados.');

@@ -1,0 +1,14 @@
+{
+  "aurora_coast":["iron_vale","northgate"],
+  "iron_vale":["aurora_coast","northgate","central_basin"],
+  "northgate":["aurora_coast","iron_vale","silver_crossing"],
+  "emerald_plains":["crimson_ridge","central_basin"],
+  "crimson_ridge":["emerald_plains","central_basin","southreach"],
+  "central_basin":["iron_vale","emerald_plains","crimson_ridge","silver_crossing","cobalt_steppe"],
+  "silver_crossing":["northgate","central_basin","cobalt_steppe","sunset_harbor"],
+  "cobalt_steppe":["central_basin","silver_crossing","mist_islands"],
+  "mist_islands":["cobalt_steppe","sunset_harbor"],
+  "sunset_harbor":["silver_crossing","mist_islands","obsidian_fields","southreach"],
+  "obsidian_fields":["sunset_harbor","southreach"],
+  "southreach":["crimson_ridge","sunset_harbor","obsidian_fields"]
+}

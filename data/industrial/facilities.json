@@ -1,0 +1,51 @@
+{
+  "component_lab": {
+    "name": "Laboratório de Componentes",
+    "emoji": "🧪",
+    "max_level": 5,
+    "base_cost": 120000,
+    "description": "Produz componentes estratégicos fictícios."
+  },
+  "military_factory": {
+    "name": "Fábrica Estratégica",
+    "emoji": "🏭",
+    "max_level": 5,
+    "base_cost": 220000,
+    "description": "Linha industrial para componentes e sistemas fictícios."
+  },
+  "vehicle_works": {
+    "name": "Complexo de Veículos",
+    "emoji": "🚛",
+    "max_level": 5,
+    "base_cost": 320000,
+    "description": "Monta veículos militares fictícios."
+  },
+  "electronics_center": {
+    "name": "Centro Eletrônico",
+    "emoji": "📡",
+    "max_level": 5,
+    "base_cost": 180000,
+    "description": "Produz sensores e módulos de controle fictícios."
+  },
+  "aerospace_plant": {
+    "name": "Complexo Aeroespacial",
+    "emoji": "✈️",
+    "max_level": 5,
+    "base_cost": 520000,
+    "description": "Monta aeronaves fictícias."
+  },
+  "naval_yard": {
+    "name": "Estaleiro Estratégico",
+    "emoji": "⚓",
+    "max_level": 5,
+    "base_cost": 700000,
+    "description": "Monta embarcações e submersíveis fictícios."
+  },
+  "strategic_systems_plant": {
+    "name": "Fábrica de Sistemas Estratégicos",
+    "emoji": "🛰️",
+    "max_level": 5,
+    "base_cost": 650000,
+    "description": "Monta sistemas estratégicos abstratos de jogo."
+  }
+}

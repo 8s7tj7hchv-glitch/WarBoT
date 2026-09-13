@@ -1,0 +1,1 @@
+export class BlacksmithQuality{calculate(baseQuality,professionLevel,stationBonus=0){return Math.max(1,Math.min(100,Math.trunc(Number(baseQuality??50)+Math.floor(Math.max(1,professionLevel)/20)+Number(stationBonus??0))))}}

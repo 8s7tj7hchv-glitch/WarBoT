@@ -1,0 +1,16 @@
+{
+    "1418706418462359684": {
+        "warehouse": {
+            "capacity": 5000,
+            "items": {}
+        },
+        "industrial": {
+            "capacity": 25000,
+            "items": {}
+        },
+        "garage": {
+            "capacity": 10,
+            "items": {}
+        }
+    }
+}

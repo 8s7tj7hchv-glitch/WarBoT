@@ -1,0 +1,196 @@
+{
+    "steel_plate": {
+        "name": "Chapa de Aço",
+        "emoji": "🔲",
+        "description": "Material industrial utilizado em veículos e máquinas.",
+        "rarity": "common",
+        "base_price": 75,
+        "weight": 2.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "steel_beam": {
+        "name": "Viga de Aço",
+        "emoji": "🏗️",
+        "description": "Estrutura utilizada em construções e fábricas.",
+        "rarity": "common",
+        "base_price": 88,
+        "weight": 3.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "copper_wire": {
+        "name": "Fio de Cobre",
+        "emoji": "🧵",
+        "description": "Condutor utilizado em equipamentos elétricos.",
+        "rarity": "common",
+        "base_price": 68,
+        "weight": 0.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "copper_cable": {
+        "name": "Cabo Industrial",
+        "emoji": "🔌",
+        "description": "Cabo utilizado em máquinas e instalações.",
+        "rarity": "common",
+        "base_price": 82,
+        "weight": 0.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "aluminum_sheet": {
+        "name": "Chapa de Alumínio",
+        "emoji": "⬜",
+        "description": "Chapa leve utilizada em equipamentos e veículos.",
+        "rarity": "common",
+        "base_price": 70,
+        "weight": 1.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_plastic": {
+        "name": "Plástico Industrial",
+        "emoji": "🧪",
+        "description": "Polímero industrial fictício usado em peças e equipamentos.",
+        "rarity": "common",
+        "base_price": 38,
+        "weight": 0.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "synthetic_rubber": {
+        "name": "Borracha Sintética",
+        "emoji": "⚫",
+        "description": "Material utilizado em pneus e peças mecânicas.",
+        "rarity": "common",
+        "base_price": 42,
+        "weight": 0.7,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_fuel": {
+        "name": "Combustível Industrial",
+        "emoji": "⛽",
+        "description": "Combustível fictício usado por máquinas e veículos.",
+        "rarity": "common",
+        "base_price": 44,
+        "weight": 0.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "lubricant": {
+        "name": "Lubrificante Industrial",
+        "emoji": "🛢️",
+        "description": "Produto utilizado na manutenção de máquinas.",
+        "rarity": "common",
+        "base_price": 36,
+        "weight": 0.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_ceramic": {
+        "name": "Cerâmica Industrial",
+        "emoji": "▫️",
+        "description": "Material técnico utilizado em equipamentos.",
+        "rarity": "uncommon",
+        "base_price": 78,
+        "weight": 1.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "carbon_fiber": {
+        "name": "Fibra de Carbono",
+        "emoji": "⬛",
+        "description": "Material avançado leve e resistente.",
+        "rarity": "rare",
+        "base_price": 160,
+        "weight": 0.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "advanced_alloy": {
+        "name": "Liga Avançada",
+        "emoji": "🔩",
+        "description": "Liga fictícia de alta resistência para equipamentos avançados.",
+        "rarity": "rare",
+        "base_price": 190,
+        "weight": 1.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "electronic_substrate": {
+        "name": "Substrato Eletrônico",
+        "emoji": "🟩",
+        "description": "Material usado na fabricação de componentes eletrônicos.",
+        "rarity": "uncommon",
+        "base_price": 105,
+        "weight": 0.2,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "battery_material": {
+        "name": "Material de Bateria",
+        "emoji": "🔋",
+        "description": "Composto industrial utilizado na fabricação de baterias.",
+        "rarity": "uncommon",
+        "base_price": 115,
+        "weight": 0.7,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "insulation_material": {
+        "name": "Material Isolante",
+        "emoji": "🧱",
+        "description": "Material utilizado em equipamentos e construções.",
+        "rarity": "common",
+        "base_price": 48,
+        "weight": 0.6,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    }
+}

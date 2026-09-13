@@ -1,0 +1,131 @@
+{
+    "basic_pickaxe": {
+        "name": "Picareta Básica",
+        "emoji": "⛏️",
+        "description": "Ferramenta inicial de mineração.",
+        "rarity": "common",
+        "base_price": 250,
+        "weight": 2.5,
+        "required_level": 1,
+        "durability": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "steel_pickaxe": {
+        "name": "Picareta de Aço",
+        "emoji": "⛏️",
+        "description": "Ferramenta resistente para mineração.",
+        "rarity": "uncommon",
+        "base_price": 650,
+        "weight": 3.0,
+        "required_level": 10,
+        "durability": 250,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_drill": {
+        "name": "Perfurador Industrial",
+        "emoji": "🛠️",
+        "description": "Equipamento avançado para extração.",
+        "rarity": "rare",
+        "base_price": 2400,
+        "weight": 12.0,
+        "required_level": 25,
+        "durability": 600,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "hammer": {
+        "name": "Martelo de Ferreiro",
+        "emoji": "🔨",
+        "description": "Ferramenta básica de metalurgia.",
+        "rarity": "common",
+        "base_price": 220,
+        "weight": 2.0,
+        "required_level": 1,
+        "durability": 120,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_hammer": {
+        "name": "Martelo Industrial",
+        "emoji": "🔨",
+        "description": "Ferramenta pesada para trabalhos industriais.",
+        "rarity": "uncommon",
+        "base_price": 580,
+        "weight": 4.0,
+        "required_level": 12,
+        "durability": 300,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "wrench": {
+        "name": "Chave Mecânica",
+        "emoji": "🔧",
+        "description": "Ferramenta básica para manutenção.",
+        "rarity": "common",
+        "base_price": 160,
+        "weight": 1.0,
+        "required_level": 1,
+        "durability": 150,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "toolbox": {
+        "name": "Caixa de Ferramentas",
+        "emoji": "🧰",
+        "description": "Conjunto de ferramentas para mecânicos.",
+        "rarity": "uncommon",
+        "base_price": 750,
+        "weight": 8.0,
+        "required_level": 8,
+        "durability": 400,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "construction_toolkit": {
+        "name": "Kit de Construção",
+        "emoji": "🧰",
+        "description": "Conjunto profissional para construções.",
+        "rarity": "uncommon",
+        "base_price": 950,
+        "weight": 10.0,
+        "required_level": 10,
+        "durability": 450,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "diagnostic_tool": {
+        "name": "Scanner Mecânico",
+        "emoji": "📟",
+        "description": "Ferramenta de diagnóstico de equipamentos.",
+        "rarity": "rare",
+        "base_price": 1800,
+        "weight": 2.0,
+        "required_level": 20,
+        "durability": 500,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "precision_toolkit": {
+        "name": "Kit de Precisão",
+        "emoji": "🛠️",
+        "description": "Ferramentas para fabricação avançada.",
+        "rarity": "rare",
+        "base_price": 2200,
+        "weight": 4.0,
+        "required_level": 30,
+        "durability": 650,
+        "tradeable": true,
+        "storable": true
+    }
+}

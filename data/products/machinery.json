@@ -1,0 +1,145 @@
+{
+    "basic_generator": {
+        "name": "Gerador Básico",
+        "emoji": "⚡",
+        "description": "Gerador para pequenas instalações.",
+        "rarity": "common",
+        "base_price": 3500,
+        "weight": 80.0,
+        "required_level": 10,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_generator": {
+        "name": "Gerador Industrial",
+        "emoji": "⚡",
+        "description": "Gerador para fábricas e instalações maiores.",
+        "rarity": "uncommon",
+        "base_price": 9500,
+        "weight": 180.0,
+        "required_level": 25,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "ore_crusher": {
+        "name": "Britador de Minério",
+        "emoji": "🏭",
+        "description": "Máquina utilizada no processamento de minérios.",
+        "rarity": "uncommon",
+        "base_price": 7500,
+        "weight": 300.0,
+        "required_level": 20,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_furnace": {
+        "name": "Forno Industrial",
+        "emoji": "🔥",
+        "description": "Equipamento utilizado na transformação de materiais.",
+        "rarity": "uncommon",
+        "base_price": 8200,
+        "weight": 260.0,
+        "required_level": 20,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "hydraulic_press": {
+        "name": "Prensa Hidráulica",
+        "emoji": "🏭",
+        "description": "Máquina para fabricação de peças metálicas.",
+        "rarity": "uncommon",
+        "base_price": 11000,
+        "weight": 350.0,
+        "required_level": 30,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "assembly_machine": {
+        "name": "Máquina de Montagem",
+        "emoji": "⚙️",
+        "description": "Equipamento para produção automatizada.",
+        "rarity": "rare",
+        "base_price": 18000,
+        "weight": 420.0,
+        "required_level": 40,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_lathe": {
+        "name": "Torno Industrial",
+        "emoji": "⚙️",
+        "description": "Máquina para fabricação de componentes mecânicos.",
+        "rarity": "uncommon",
+        "base_price": 9800,
+        "weight": 250.0,
+        "required_level": 25,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "cnc_machine": {
+        "name": "Máquina CNC",
+        "emoji": "🖥️",
+        "description": "Equipamento automatizado de alta precisão.",
+        "rarity": "rare",
+        "base_price": 25000,
+        "weight": 400.0,
+        "required_level": 50,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "industrial_compressor": {
+        "name": "Compressor Industrial",
+        "emoji": "💨",
+        "description": "Equipamento auxiliar para instalações industriais.",
+        "rarity": "uncommon",
+        "base_price": 7200,
+        "weight": 190.0,
+        "required_level": 22,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "conveyor_system": {
+        "name": "Sistema de Esteiras",
+        "emoji": "🏭",
+        "description": "Sistema utilizado na automação de fábricas.",
+        "rarity": "rare",
+        "base_price": 14500,
+        "weight": 320.0,
+        "required_level": 35,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "mining_machine": {
+        "name": "Máquina de Mineração",
+        "emoji": "⛏️",
+        "description": "Máquina pesada utilizada para aumentar a produção mineral.",
+        "rarity": "rare",
+        "base_price": 32000,
+        "weight": 800.0,
+        "required_level": 50,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "refining_unit": {
+        "name": "Unidade de Refino",
+        "emoji": "🏭",
+        "description": "Equipamento utilizado no processamento industrial.",
+        "rarity": "rare",
+        "base_price": 28000,
+        "weight": 600.0,
+        "required_level": 45,
+        "tradeable": true,
+        "storable": true
+    }
+}

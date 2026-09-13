@@ -1,6 +1,31 @@
 {
+  "name": "botnt",
+  "version": "9.2.0",
+  "private": true,
+  "description": "BoTNT - Fase 9.2: interface unificada com 14 comandos principais e subpainéis interativos",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node scripts/check-all.js",
+    "validate:data": "node scripts/validate-data.js",
+    "test:integration": "node scripts/integration-test.js",
+    "test": "npm run check && npm run validate:data && npm run validate:world && npm run validate:military && npm run validate:military-industry && npm run validate:warfare && npm run validate:diplomacy && npm run validate:global-war && npm run validate:phase9-1 && npm run validate:phase9-2 && npm run test:integration",
+    "validate:world": "node scripts/validate-world.js",
+    "validate:military": "node scripts/validate-military.js",
+    "validate:military-industry": "node scripts/validate-military-industry.js",
+    "validate:warfare": "node scripts/validate-warfare.js",
+    "validate:diplomacy": "node scripts/validate-diplomacy.js",
+    "validate:global-war": "node scripts/validate-global-war.js",
+    "validate:phase9-1": "node scripts/validate-phase9-1.js",
+    "validate:phase9-2": "node scripts/validate-phase9-2.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "discord.js": "^14.27.0",
-    "dotenv": "^17.4.2"
+    "dotenv": "^16.6.1"
   }
 }

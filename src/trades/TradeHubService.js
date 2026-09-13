@@ -1,0 +1,2 @@
+import { PlayerTradeManager } from './PlayerTradeManager.js';
+export class TradeHubService{constructor({trades=new PlayerTradeManager()}={}){this.trades=trades;} summary(userId){const all=this.trades.listFor(userId);return {pending:all.filter(t=>t.status==='pending').length,completed:all.filter(t=>t.status==='completed').length,rejected:all.filter(t=>t.status==='rejected').length,cancelled:all.filter(t=>t.status==='cancelled').length,recent:all.slice(-10).reverse()};}}

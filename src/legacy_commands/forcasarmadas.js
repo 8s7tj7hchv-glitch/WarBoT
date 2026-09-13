@@ -1,0 +1,5 @@
+import { EmbedBuilder, SlashCommandBuilder } from 'discord.js';
+import { EMBED_COLOR } from '../config/settings.js';
+import { ArmedForcesHubService } from '../military/ArmedForcesHubService.js';
+const hub=new ArmedForcesHubService();
+export default{data:new SlashCommandBuilder().setName('forcasarmadas').setDescription('Mostra as forças armadas fictícias do seu país.'),async execute(i){const d=hub.dashboard(i.user.id);if(!d.country)return i.reply({content:'❌ Você não pertence a um país.',ephemeral:true});const e=new EmbedBuilder().setColor(EMBED_COLOR).setTitle(`🪖 Forças Armadas • ${d.country.name}`).addFields({name:'Unidades',value:`Total: **${d.units.total}**\nProntidão média: **${d.units.average_readiness}%**`,inline:true},{name:'Ativos',value:`Total: **${d.assets.total}**\nAtivos: **${d.assets.active}** • Reserva: **${d.assets.reserve}**`,inline:true},{name:'Ramos',value:`🪖 ${d.units.by_branch.army??0} • ✈️ ${d.units.by_branch.air_force??0} • ⚓ ${d.units.by_branch.navy??0} • 🛰️ ${d.units.by_branch.strategic??0}`});await i.reply({embeds:[e],ephemeral:true})}};

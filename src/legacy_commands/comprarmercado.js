@@ -1,0 +1,5 @@
+import { SlashCommandBuilder } from 'discord.js';
+import { MarketManager } from '../market/MarketManager.js';
+import { MarketNotificationService } from '../notifications/MarketNotificationService.js';
+const market=new MarketManager(), notify=new MarketNotificationService();
+export default {data:new SlashCommandBuilder().setName('comprarmercado').setDescription('Cria uma ordem de compra.').addStringOption(o=>o.setName('item').setDescription('ID do item').setRequired(true)).addIntegerOption(o=>o.setName('quantidade').setDescription('Quantidade').setMinValue(1).setRequired(true)).addNumberOption(o=>o.setName('preco').setDescription('Preço máximo unitário').setMinValue(0.01).setRequired(true)),async execute(i){const [ok,msg,o]=market.createBuyOrder(i.user.id,i.options.getString('item'),i.options.getInteger('quantidade'),i.options.getNumber('preco'));if(ok&&i.guildId)await notify.order(i,{side:'buy',order:o});await i.reply({content:ok?`✅ ${msg}\nOrdem: \`${o.id}\` • restante: ${o.remaining}\nMatching: ${o.match_result?.filled??0} unidade(s).`:`❌ ${msg}`,ephemeral:true});}};

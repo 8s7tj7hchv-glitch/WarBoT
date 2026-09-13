@@ -1,0 +1,131 @@
+{
+    "titan_crystal": {
+        "name": "Cristal Titã",
+        "emoji": "🔷",
+        "description": "Cristal fictício raro utilizado em tecnologias avançadas.",
+        "rarity": "epic",
+        "base_price": 800,
+        "weight": 0.4,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "zeta_core": {
+        "name": "Núcleo Zeta",
+        "emoji": "🟣",
+        "description": "Componente energético totalmente fictício do universo TNT.",
+        "rarity": "legendary",
+        "base_price": 1800,
+        "weight": 0.8,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "nova_crystal": {
+        "name": "Cristal Nova",
+        "emoji": "💠",
+        "description": "Recurso fictício utilizado em projetos de pesquisa avançada.",
+        "rarity": "epic",
+        "base_price": 950,
+        "weight": 0.3,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "xenon_alloy": {
+        "name": "Liga Xenon",
+        "emoji": "🧿",
+        "description": "Liga metálica totalmente fictícia de tecnologia avançada.",
+        "rarity": "epic",
+        "base_price": 1250,
+        "weight": 1.1,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "quantum_fiber": {
+        "name": "Fibra Quântica",
+        "emoji": "🌀",
+        "description": "Material fictício utilizado em equipamentos de alto nível.",
+        "rarity": "legendary",
+        "base_price": 2200,
+        "weight": 0.1,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "omega_resin": {
+        "name": "Resina Ômega",
+        "emoji": "🧪",
+        "description": "Material sintético fictício usado em projetos especiais.",
+        "rarity": "epic",
+        "base_price": 760,
+        "weight": 0.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "plasma_gel": {
+        "name": "Gel Plasma",
+        "emoji": "🟪",
+        "description": "Material energético fictício para tecnologias avançadas.",
+        "rarity": "legendary",
+        "base_price": 2400,
+        "weight": 0.4,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "aetherium": {
+        "name": "Aetherium",
+        "emoji": "✨",
+        "description": "Mineral totalmente fictício extremamente raro.",
+        "rarity": "legendary",
+        "base_price": 3000,
+        "weight": 0.6,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": true,
+        "storable": true
+    },
+
+    "neutronium_x": {
+        "name": "Neutronium-X",
+        "emoji": "🔮",
+        "description": "Material fictício exclusivo de pesquisas de alto nível.",
+        "rarity": "mythic",
+        "base_price": 5000,
+        "weight": 1.0,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": false,
+        "storable": true
+    },
+
+    "fusion_crystal": {
+        "name": "Cristal de Fusão",
+        "emoji": "💎",
+        "description": "Cristal fictício utilizado exclusivamente em tecnologias especiais do jogo.",
+        "rarity": "mythic",
+        "base_price": 6500,
+        "weight": 0.5,
+        "quality_min": 1,
+        "quality_max": 100,
+        "tradeable": false,
+        "storable": true
+    }
+}

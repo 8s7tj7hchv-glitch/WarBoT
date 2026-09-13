@@ -1,0 +1,1 @@
+import path from 'node:path';import { MECHANIC_DATA_DIR } from '../../config/settings.js';import { JsonRegistry } from '../JsonRegistry.js';export class RepairRegistry extends JsonRegistry{constructor(){super(path.join(MECHANIC_DATA_DIR,'repairs.json'));}}

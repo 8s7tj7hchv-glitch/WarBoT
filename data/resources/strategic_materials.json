@@ -1,0 +1,62 @@
+{
+  "aegis_alloy": {
+    "name": "Liga Aegis",
+    "emoji": "🧱",
+    "description": "Liga estrutural fictícia de alta resistência para indústria estratégica.",
+    "rarity": "rare",
+    "base_price": 420,
+    "weight": 3.2,
+    "tradeable": true,
+    "storable": true,
+    "storage_type": "industrial",
+    "technology_level": 2
+  },
+  "vector_composite": {
+    "name": "Compósito Vector",
+    "emoji": "🧩",
+    "description": "Compósito fictício para estruturas leves e módulos avançados.",
+    "rarity": "rare",
+    "base_price": 560,
+    "weight": 1.4,
+    "tradeable": true,
+    "storable": true,
+    "storage_type": "industrial",
+    "technology_level": 2
+  },
+  "flux_crystal": {
+    "name": "Cristal Flux",
+    "emoji": "💠",
+    "description": "Recurso energético totalmente fictício usado em sistemas avançados do jogo.",
+    "rarity": "epic",
+    "base_price": 950,
+    "weight": 0.8,
+    "tradeable": true,
+    "storable": true,
+    "storage_type": "strategic",
+    "technology_level": 3
+  },
+  "ceramic_x": {
+    "name": "Cerâmica X",
+    "emoji": "⬜",
+    "description": "Material cerâmico fictício para proteção e isolamento industrial.",
+    "rarity": "uncommon",
+    "base_price": 280,
+    "weight": 2.1,
+    "tradeable": true,
+    "storable": true,
+    "storage_type": "industrial",
+    "technology_level": 2
+  },
+  "quantum_fiber": {
+    "name": "Fibra Quantum",
+    "emoji": "🧵",
+    "description": "Fibra tecnológica fictícia para sensores e controle.",
+    "rarity": "epic",
+    "base_price": 1250,
+    "weight": 0.2,
+    "tradeable": true,
+    "storable": true,
+    "storage_type": "strategic",
+    "technology_level": 4
+  }
+}
