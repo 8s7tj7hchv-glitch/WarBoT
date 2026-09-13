@@ -1,4 +1,4 @@
-import { EmbedBuilder, SlashCommandBuilder } from 'discord.js';
+import { EmbedBuilder, SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { EMBED_COLOR } from '../config/settings.js';
 import { InventoryManager } from '../inventory/InventoryManager.js';
 
@@ -33,6 +33,6 @@ export default {
       })
       .setFooter({ text: 'Migração Python → Node.js • Etapa 3' });
 
-    await interaction.reply({ embeds: [embed], ephemeral: true });
+    await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
   }
 };

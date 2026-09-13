@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from 'discord.js';
+import { SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { renderUnifiedPanel } from '../ui/UnifiedPanels.js';
 
 export default {
@@ -6,6 +6,6 @@ export default {
     .setName('inventario')
     .setDescription('Abre o painel de inventário e armazenamentos.'),
   async execute(interaction) {
-    await interaction.reply({ ...renderUnifiedPanel('inventario', interaction.user, interaction.guildId), ephemeral: true });
+    await interaction.reply({ ...renderUnifiedPanel('inventario', interaction.user, interaction.guildId), flags: MessageFlags.Ephemeral });
   }
 };

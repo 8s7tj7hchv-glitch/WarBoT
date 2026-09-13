@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from 'discord.js';
+import { SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { renderUnifiedPanel } from '../ui/UnifiedPanels.js';
 
 export default {
@@ -6,6 +6,6 @@ export default {
     .setName('forcas')
     .setDescription('Abre o painel das Forças Armadas.'),
   async execute(interaction) {
-    await interaction.reply({ ...renderUnifiedPanel('forcas', interaction.user, interaction.guildId), ephemeral: true });
+    await interaction.reply({ ...renderUnifiedPanel('forcas', interaction.user, interaction.guildId), flags: MessageFlags.Ephemeral });
   }
 };

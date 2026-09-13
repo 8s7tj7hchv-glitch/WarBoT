@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from 'discord.js';
+import { SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { ProfileManager } from '../players/ProfileManager.js';
 import { renderPage } from '../ui/MainPanel.js';
 
@@ -11,6 +11,6 @@ export default {
 
   async execute(interaction) {
     profiles.getOrCreate(interaction.user.id, interaction.user.username);
-    await interaction.reply({ ...renderPage('home', interaction.user), ephemeral: true });
+    await interaction.reply({ ...renderPage('home', interaction.user), flags: MessageFlags.Ephemeral });
   }
 };

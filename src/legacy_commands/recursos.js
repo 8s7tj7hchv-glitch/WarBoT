@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { ResourceRegistry } from '../resources/ResourceRegistry.js';
 import { EMBED_COLOR } from '../config/settings.js';
 const registry = new ResourceRegistry();
@@ -13,6 +13,6 @@ export default {
       { name: 'Industriais', value: String(counts.industrial_materials ?? 0), inline: true },
       { name: 'Especiais', value: String(counts.special_resources ?? 0), inline: true }
     );
-    await interaction.reply({ embeds: [embed], ephemeral: true });
+    await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
   }
 };

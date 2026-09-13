@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { MarketHubService } from '../market/MarketHubService.js';
 import { MarketIntegrityManager } from '../market/MarketIntegrityManager.js';
 
@@ -24,5 +24,5 @@ export async function execute(interaction) {
       { name: '🧪 Integridade', value: audit.ok ? '✅ Nenhuma inconsistência detectada.' : `⚠️ **${audit.issues.length}** inconsistência(s) detectada(s).`, inline: true }
     )
     .setTimestamp();
-  await interaction.reply({ embeds: [embed], ephemeral: true });
+  await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
 }

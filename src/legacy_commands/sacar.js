@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from 'discord.js';
+import { SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { EconomyService } from '../economy/EconomyService.js';
 
 const economy = new EconomyService();
@@ -20,7 +20,7 @@ export default {
 
     await interaction.reply({
       content: `${success ? '✅' : '❌'} ${message}\n👛 Carteira: **$ ${balances.wallet.toFixed(2)}**\n🏦 Banco: **$ ${balances.bank.toFixed(2)}**`,
-      ephemeral: true
+      flags: MessageFlags.Ephemeral
     });
   }
 };

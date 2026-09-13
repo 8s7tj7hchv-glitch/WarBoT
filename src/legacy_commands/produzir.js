@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { ProductionManager } from '../production/ProductionManager.js';
 import { SUCCESS_COLOR, ERROR_COLOR } from '../config/settings.js';
 const production = new ProductionManager();
@@ -9,6 +9,6 @@ export default {
     const [ok, message, result] = production.craft(interaction.user.id, recipeId, amount);
     const embed = new EmbedBuilder().setColor(ok ? SUCCESS_COLOR : ERROR_COLOR).setTitle(ok ? '✅ Produção concluída' : '❌ Produção indisponível').setDescription(message);
     if (ok && result) embed.addFields({ name: 'Produto', value: `\`${result.item_id}\` × ${result.quantity}`, inline: true }, { name: 'Qualidade', value: String(result.quality), inline: true }, { name: 'Energia usada', value: String(result.energy_used), inline: true });
-    await interaction.reply({ embeds: [embed], ephemeral: true });
+    await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
   }
 };

@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { InternationalOrderManager } from '../market/InternationalOrderManager.js';
 import { ItemRegistry } from '../core/ItemRegistry.js';
 const orders = new InternationalOrderManager();
@@ -13,5 +13,5 @@ export async function execute(interaction) {
     const market = o.type === 'sell' ? o.origin_guild_name : o.destination_guild_name;
     return `${side} • **${items.getName(o.item_id)}** • ${o.remaining}/${o.quantity} • $${Number(o.unit_price).toFixed(2)} • ${o.status} • 🌐 ${market} • \`${o.id.slice(0, 9)}\``;
   });
-  await interaction.reply({ embeds: [new EmbedBuilder().setTitle('🌐 Minhas Ordens Internacionais').setDescription(lines.length ? lines.join('\n') : 'Nenhuma ordem internacional.')], ephemeral: true });
+  await interaction.reply({ embeds: [new EmbedBuilder().setTitle('🌐 Minhas Ordens Internacionais').setDescription(lines.length ? lines.join('\n') : 'Nenhuma ordem internacional.')], flags: MessageFlags.Ephemeral });
 }

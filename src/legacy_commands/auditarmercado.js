@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, MessageFlags } from 'discord.js';
 import { MarketIntegrityManager } from '../market/MarketIntegrityManager.js';
 
 const integrity = new MarketIntegrityManager();
@@ -15,5 +15,5 @@ export async function execute(interaction) {
     .setDescription(result.ok ? '✅ Todos os vínculos principais estão consistentes.' : `⚠️ Foram encontradas **${result.issues.length}** inconsistências.\n\n${lines.join('\n')}`)
     .setFooter({ text: 'A auditoria é somente leitura e não altera dados.' })
     .setTimestamp();
-  await interaction.reply({ embeds: [embed], ephemeral: true });
+  await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
 }

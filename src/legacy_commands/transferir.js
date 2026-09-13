@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from 'discord.js';
+import { SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { EconomyService } from '../economy/EconomyService.js';
 
 const economy = new EconomyService();
@@ -22,7 +22,7 @@ export default {
     const amount = interaction.options.getNumber('valor', true);
 
     if (target.bot) {
-      await interaction.reply({ content: '❌ Não é possível transferir dinheiro para bots.', ephemeral: true });
+      await interaction.reply({ content: '❌ Não é possível transferir dinheiro para bots.', flags: MessageFlags.Ephemeral });
       return;
     }
 
@@ -31,7 +31,7 @@ export default {
 
     await interaction.reply({
       content: `${success ? '✅' : '❌'} ${message}${success ? `\n👤 Destino: **${target.username}**` : ''}\n👛 Sua carteira: **$ ${balances.wallet.toFixed(2)}**`,
-      ephemeral: true
+      flags: MessageFlags.Ephemeral
     });
   }
 };

@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { MilitaryIndustryHubService } from '../military_industry/MilitaryIndustryHubService.js';
 const pct = (n) => `${Math.round(Number(n ?? 0) * 100)}%`;
 export default {
@@ -16,6 +16,6 @@ export default {
       { name: '🔧 Manutenção', value: `Bônus: **${pct(d.bonuses.maintenance)}**`, inline: true },
       { name: '🧪 Pesquisa', value: `Bônus de centros: **${pct(d.bonuses.research)}**`, inline: true }
     );
-    await i.reply({ embeds: [embed], ephemeral: true });
+    await i.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
   }
 };

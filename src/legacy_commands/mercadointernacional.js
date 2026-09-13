@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+import { SlashCommandBuilder, EmbedBuilder, MessageFlags } from 'discord.js';
 import { InternationalOrderManager } from '../market/InternationalOrderManager.js';
 import { GuildMarketRegistry } from '../market/GuildMarketRegistry.js';
 import { ItemRegistry } from '../core/ItemRegistry.js';
@@ -13,10 +13,10 @@ export const data = new SlashCommandBuilder()
   .addStringOption((o) => o.setName('item').setDescription('ID do item').setRequired(false));
 
 export async function execute(interaction) {
-  if (!interaction.guildId) return interaction.reply({ content: '❌ Use este comando dentro de um servidor.', ephemeral: true });
+  if (!interaction.guildId) return interaction.reply({ content: '❌ Use este comando dentro de um servidor.', flags: MessageFlags.Ephemeral });
   guilds.register(interaction.guildId, interaction.guild?.name ?? 'Servidor');
   const itemId = interaction.options.getString('item');
-  if (itemId && !items.get(itemId)) return interaction.reply({ content: '❌ Item não encontrado.', ephemeral: true });
+  if (itemId && !items.get(itemId)) return interaction.reply({ content: '❌ Item não encontrado.', flags: MessageFlags.Ephemeral });
 
   const sells = orders.listSell(itemId).slice(0, 8);
   const buys = orders.listBuy(itemId).slice(0, 8);
@@ -30,5 +30,5 @@ export async function execute(interaction) {
       { name: '🟢 Compras internacionais', value: buys.length ? buys.map(fmtBuy).join('\n') : 'Nenhuma ordem.' },
       { name: '🔴 Vendas internacionais', value: sells.length ? sells.map(fmtSell).join('\n') : 'Nenhuma ordem.' }
     );
-  await interaction.reply({ embeds: [embed], ephemeral: true });
+  await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
 }

@@ -1,4 +1,4 @@
-import { EmbedBuilder, SlashCommandBuilder } from 'discord.js';
+import { EmbedBuilder, SlashCommandBuilder, MessageFlags } from 'discord.js';
 import { EMBED_COLOR } from '../config/settings.js';
 import { EconomyService } from '../economy/EconomyService.js';
 
@@ -24,6 +24,6 @@ export default {
       .setFooter({ text: 'BoTNT • Economia Node.js' })
       .setTimestamp();
 
-    await interaction.reply({ embeds: [embed], ephemeral: true });
+    await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
   }
 };

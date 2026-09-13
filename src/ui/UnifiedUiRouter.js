@@ -1,4 +1,4 @@
-import { EmbedBuilder, PermissionFlagsBits } from 'discord.js';
+import { EmbedBuilder, PermissionFlagsBits, MessageFlags } from 'discord.js';
 import { EMBED_COLOR } from '../config/settings.js';
 import { EconomyService } from '../economy/EconomyService.js';
 import { renderPage } from './MainPanel.js';
@@ -30,13 +30,13 @@ export async function handleUnifiedUiInteraction(interaction) {
     }
     if (interaction.customId === 'hub:config:type') {
       const state=selections.get(key(interaction))??{}; state.type=interaction.values[0]; selections.set(key(interaction),state);
-      await interaction.reply({content:`✅ Tipo selecionado: **${state.type}**. Agora escolha o canal e clique em **Salvar seleção**.`,ephemeral:true}); return true;
+      await interaction.reply({content:`✅ Tipo selecionado: **${state.type}**. Agora escolha o canal e clique em **Salvar seleção**.`,flags: MessageFlags.Ephemeral}); return true;
     }
   }
 
   if (interaction.isChannelSelectMenu?.() && interaction.customId === 'hub:config:channel') {
     const state=selections.get(key(interaction))??{}; state.channelId=interaction.values[0]; selections.set(key(interaction),state);
-    await interaction.reply({content:`✅ Canal selecionado: <#${state.channelId}>. Clique em **Salvar seleção**.`,ephemeral:true}); return true;
+    await interaction.reply({content:`✅ Canal selecionado: <#${state.channelId}>. Clique em **Salvar seleção**.`,flags: MessageFlags.Ephemeral}); return true;
   }
 
   if (!interaction.isButton()) return false;
@@ -44,19 +44,19 @@ export async function handleUnifiedUiInteraction(interaction) {
   if (id.startsWith('hub:view:')) { await interaction.update(renderPage(id.split(':')[2],interaction.user)); return true; }
   if (id.startsWith('hub:panel:')) { await interaction.update(renderUnifiedPanel(id.split(':')[2],interaction.user,interaction.guildId)); return true; }
   if (id==='hub:economy:balance') { await interaction.update(renderUnifiedPanel('economia',interaction.user,interaction.guildId)); return true; }
-  if (id==='hub:economy:transactions') { await interaction.reply({embeds:[txEmbed(interaction.user.id)],ephemeral:true}); return true; }
+  if (id==='hub:economy:transactions') { await interaction.reply({embeds:[txEmbed(interaction.user.id)],flags: MessageFlags.Ephemeral}); return true; }
   if (id.startsWith('hub:config:')) {
-    if (!interaction.memberPermissions?.has(PermissionFlagsBits.ManageGuild)) { await interaction.reply({content:'❌ Você precisa da permissão **Gerenciar Servidor**.',ephemeral:true}); return true; }
+    if (!interaction.memberPermissions?.has(PermissionFlagsBits.ManageGuild)) { await interaction.reply({content:'❌ Você precisa da permissão **Gerenciar Servidor**.',flags: MessageFlags.Ephemeral}); return true; }
     const action=id.split(':')[2];
     if(action==='refresh'){await interaction.update(renderConfigPanel(interaction.guildId)); return true;}
     const state=selections.get(key(interaction))??{};
-    if(!state.type){await interaction.reply({content:'❌ Primeiro selecione o tipo de canal.',ephemeral:true}); return true;}
+    if(!state.type){await interaction.reply({content:'❌ Primeiro selecione o tipo de canal.',flags: MessageFlags.Ephemeral}); return true;}
     if(action==='save'){
-      if(!state.channelId){await interaction.reply({content:'❌ Escolha o canal antes de salvar.',ephemeral:true});return true;}
-      channels.set(interaction.guildId,state.type,state.channelId); await interaction.reply({content:`✅ Canal **${state.type}** definido como <#${state.channelId}>.`,ephemeral:true}); return true;
+      if(!state.channelId){await interaction.reply({content:'❌ Escolha o canal antes de salvar.',flags: MessageFlags.Ephemeral});return true;}
+      channels.set(interaction.guildId,state.type,state.channelId); await interaction.reply({content:`✅ Canal **${state.type}** definido como <#${state.channelId}>.`,flags: MessageFlags.Ephemeral}); return true;
     }
-    if(action==='remove'){channels.remove(interaction.guildId,state.type); await interaction.reply({content:`✅ Configuração **${state.type}** removida.`,ephemeral:true}); return true;}
-    if(action==='test'){const r=await notifications.send(interaction,interaction.guildId,state.type,{title:'Teste de notificações',emoji:'🧪',description:`Canal **${state.type}** configurado corretamente.`}); await interaction.reply({content:r.sent?'✅ Mensagem de teste enviada.':`❌ Não foi possível enviar: ${r.reason}`,ephemeral:true}); return true;}
+    if(action==='remove'){channels.remove(interaction.guildId,state.type); await interaction.reply({content:`✅ Configuração **${state.type}** removida.`,flags: MessageFlags.Ephemeral}); return true;}
+    if(action==='test'){const r=await notifications.send(interaction,interaction.guildId,state.type,{title:'Teste de notificações',emoji:'🧪',description:`Canal **${state.type}** configurado corretamente.`}); await interaction.reply({content:r.sent?'✅ Mensagem de teste enviada.':`❌ Não foi possível enviar: ${r.reason}`,flags: MessageFlags.Ephemeral}); return true;}
   }
   return false;
 }

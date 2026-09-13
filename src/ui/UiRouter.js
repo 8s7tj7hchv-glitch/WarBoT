@@ -1,9 +1,7 @@
-import {
-  ActionRowBuilder,
+import { ActionRowBuilder,
   ModalBuilder,
   TextInputBuilder,
-  TextInputStyle
-} from 'discord.js';
+  TextInputStyle, MessageFlags } from 'discord.js';
 import { renderPage } from './MainPanel.js';
 import { EconomyService } from '../economy/EconomyService.js';
 import { StorageTransferManager } from '../storage/StorageTransferManager.js';
@@ -71,8 +69,8 @@ export async function handleUiInteraction(interaction) {
     else if (id === 'tnt:modal:intBuy') { [ok, message] = internationalMarket.createBuyOrder(uid, interaction.guildId, interaction.guild?.name ?? 'Servidor', interaction.fields.getTextInputValue('item').trim(), interaction.fields.getTextInputValue('quantity'), interaction.fields.getTextInputValue('price')); page = 'market'; }
     else return false;
 
-    await interaction.reply({ content: `${ok ? '✅' : '❌'} ${message}`, ephemeral: true });
-    await interaction.followUp({ ...renderPage(page, interaction.user, arg), ephemeral: true });
+    await interaction.reply({ content: `${ok ? '✅' : '❌'} ${message}`, flags: MessageFlags.Ephemeral });
+    await interaction.followUp({ ...renderPage(page, interaction.user, arg), flags: MessageFlags.Ephemeral });
     return true;
   }
 
