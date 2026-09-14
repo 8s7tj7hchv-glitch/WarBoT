@@ -1,1 +1,46 @@
-{}
+{
+    "1418706418462359684": {
+        "miner": {
+            "level": 1,
+            "xp": 0,
+            "actions": 0,
+            "total_earned": 0,
+            "unlocked": true
+        },
+        "blacksmith": {
+            "level": 1,
+            "xp": 0,
+            "actions": 0,
+            "total_earned": 0,
+            "unlocked": true
+        },
+        "builder": {
+            "level": 1,
+            "xp": 0,
+            "actions": 0,
+            "total_earned": 0,
+            "unlocked": true
+        },
+        "trucker": {
+            "level": 1,
+            "xp": 0,
+            "actions": 0,
+            "total_earned": 0,
+            "unlocked": true
+        },
+        "mechanic": {
+            "level": 1,
+            "xp": 0,
+            "actions": 0,
+            "total_earned": 0,
+            "unlocked": true
+        },
+        "merchant": {
+            "level": 1,
+            "xp": 0,
+            "actions": 0,
+            "total_earned": 0,
+            "unlocked": true
+        }
+    }
+}
