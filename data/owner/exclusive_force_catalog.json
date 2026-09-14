@@ -1,0 +1,42 @@
+[
+  {
+    "id": "nexus_zero",
+    "name": "Nexus Zero",
+    "emoji": "☢️",
+    "category": "strategic",
+    "description": "Sistema estratégico totalmente fictício de altíssimo impacto no jogo.",
+    "gameStats": { "power": 10000, "defense": 3200, "mobility": 5, "support": 2500 }
+  },
+  {
+    "id": "titan_omega",
+    "name": "Titan Omega",
+    "emoji": "🛡️",
+    "category": "ground",
+    "description": "Blindado pesado fictício exclusivo do dono.",
+    "gameStats": { "power": 7200, "defense": 8600, "mobility": 2200, "support": 1100 }
+  },
+  {
+    "id": "abyss_prime",
+    "name": "Abyss Prime",
+    "emoji": "🌊",
+    "category": "naval",
+    "description": "Submersível fictício exclusivo para operações abstratas do jogo.",
+    "gameStats": { "power": 7900, "defense": 6100, "mobility": 4100, "support": 1800 }
+  },
+  {
+    "id": "solaris_wing",
+    "name": "Solaris Wing",
+    "emoji": "✈️",
+    "category": "air",
+    "description": "Aeronave fictícia de superioridade estratégica do jogo.",
+    "gameStats": { "power": 8400, "defense": 4700, "mobility": 9200, "support": 2100 }
+  },
+  {
+    "id": "aegis_crown",
+    "name": "Aegis Crown",
+    "emoji": "🛰️",
+    "category": "defense",
+    "description": "Rede defensiva fictícia de proteção estratégica.",
+    "gameStats": { "power": 3600, "defense": 12000, "mobility": 0, "support": 6500 }
+  }
+]
