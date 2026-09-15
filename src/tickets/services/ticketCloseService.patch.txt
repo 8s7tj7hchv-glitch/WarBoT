@@ -1,0 +1,29 @@
+FASE 11 — Solicitação de avaliação após fechamento
+
+No `ticketCloseService.js`, importe:
+
+import { sendRatingRequest } from './ratingService.js';
+
+Dentro de `confirmClose(interaction)`, depois de salvar o status fechado:
+
+const owner = await interaction.client.users.fetch(ticket.ownerId).catch(() => null);
+if (owner) {
+  await sendRatingRequest(interaction.guild, owner, {
+    ...ticket,
+    status: 'closed',
+    closedAt: new Date().toISOString(),
+    closedBy: interaction.user.id,
+    closeReason: reason
+  });
+}
+
+Assim que o ticket for fechado, o usuário receberá a avaliação por DM.
+
+IMPORTANTE:
+Interações de botões enviados por DM não possuem `guildId`.
+Se sua implementação usar avaliação via DM, guarde também `guildId` no customId
+ou use uma rota que consiga localizar o ticket globalmente. O arquivo
+`routerFase11.js` desta fase funciona diretamente em contexto de servidor.
+Para máxima compatibilidade, você pode enviar o painel de avaliação no próprio
+ticket antes de bloquear/excluir, ou adaptar o lookup para buscar pelo número
+em todas as guilds.

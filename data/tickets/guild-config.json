@@ -1,0 +1,22 @@
+{
+  "1542276257528418409": {
+    "enabled": true,
+    "panelChannelId": null,
+    "ticketCategoryId": null,
+    "logChannelId": null,
+    "supportRoleId": null,
+    "adminRoleId": null,
+    "maxOpenTickets": 1,
+    "cooldownSeconds": 30,
+    "panelTitle": "🎫 Central de Atendimento",
+    "panelDescription": "Precisa de ajuda? Clique no botão abaixo para abrir um ticket.",
+    "panelColor": "#5865F2",
+    "panelThumbnail": null,
+    "panelImage": null,
+    "panelFooter": "Sistema de Tickets",
+    "openButtonLabel": "Abrir Ticket",
+    "openButtonEmoji": "🎫",
+    "openButtonStyle": "Primary",
+    "ticketTypes": []
+  }
+}

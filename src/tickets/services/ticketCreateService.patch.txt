@@ -1,0 +1,22 @@
+FASE 8 — ajuste no registro do ticket criado:
+
+No objeto passado para createTicketRecord(...), adicione:
+
+priority: 'normal',
+
+Exemplo:
+createTicketRecord(guild.id, {
+  number,
+  channelId: channel.id,
+  ownerId: user.id,
+  categoryKey: category.key,
+  categoryName: category.name,
+  staffRoleId,
+  claimedBy: null,
+  priority: 'normal',
+  status: 'open',
+  ...
+});
+
+O buildStaffControls() da Fase 8 já aceita:
+buildStaffControls('normal')
