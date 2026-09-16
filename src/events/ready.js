@@ -1,6 +1,11 @@
 import { Events } from 'discord.js';
 import { BOT_NAME } from '../config/settings.js';
 
+// 🎁 Sorteios — Fases 1–10
+import {
+  giveawayScheduler
+} from '../giveaways/GiveawayScheduler.js';
+
 export default {
   name: Events.ClientReady,
   once: true,
@@ -13,5 +18,12 @@ export default {
     console.log(`🌐 Servidores: ${client.guilds.cache.size}`);
     console.log(`⚡ Gateway: ${Math.round(client.ws.ping)} ms`);
     console.log('==========================================');
+
+    // ==========================================
+    // 🎁 SORTEIOS — SCHEDULER
+    // ==========================================
+    giveawayScheduler.start(client);
+
+    console.log('🎁 Scheduler de sorteios iniciado.');
   }
 };

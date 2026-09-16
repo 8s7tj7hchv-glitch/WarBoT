@@ -1,0 +1,2 @@
+import { MessageFlags } from 'discord.js';import { isSystemEnabled } from './systemState.js';import { getSystem } from './systemDiscovery.js';
+export async function requireSystemEnabled(i,k){if(isSystemEnabled(i.guildId,k))return true;const s=getSystem(k);const p={content:`🔧 ${s?.emoji||'⚙️'} **${s?.name||k}** está em manutenção.`,flags:MessageFlags.Ephemeral};if(i.replied||i.deferred)await i.followUp(p).catch(()=>{});else await i.reply(p).catch(()=>{});return false;}

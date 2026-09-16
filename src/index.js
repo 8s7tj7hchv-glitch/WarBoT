@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
 import {
   Client,
   Collection,
@@ -15,6 +16,9 @@ import { createDirectories } from './core/directories.js';
 import { loadCommands } from './core/loadCommands.js';
 import { loadEvents } from './core/loadEvents.js';
 
+// ⚙️ Controle Central — descoberta automática dos sistemas
+import { discoverSystems } from './systems/systemDiscovery.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -29,6 +33,9 @@ console.log(`🚀 Iniciando ${BOT_NAME} em Node.js...`);
 console.log('==========================================');
 
 createDirectories();
+
+// 🧩 Detecta os sistemas registrados em src/systems/manifests/
+await discoverSystems();
 
 const client = new Client({
   intents: [
@@ -58,7 +65,13 @@ await client.login(BOT_TOKEN);
 // Registro global de comandos após o login; não exige CLIENT_ID separado.
 try {
   await client.application.commands.set(applicationCommands);
-  console.log(`✅ ${applicationCommands.length} comando(s) slash sincronizado(s).`);
+
+  console.log(
+    `✅ ${applicationCommands.length} comando(s) slash sincronizado(s).`
+  );
 } catch (error) {
-  console.error('❌ Erro ao sincronizar comandos slash:', error);
+  console.error(
+    '❌ Erro ao sincronizar comandos slash:',
+    error
+  );
 }

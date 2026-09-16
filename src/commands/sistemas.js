@@ -1,0 +1,1 @@
+import {SlashCommandBuilder} from 'discord.js';import {showSystemControlPanel} from '../systems/systemControlPanel.js';export default{data:new SlashCommandBuilder().setName('sistemas').setDescription('Controle central dos sistemas'),execute:i=>showSystemControlPanel(i)};

@@ -4,11 +4,25 @@ import { handleUiInteraction } from '../ui/UiRouter.js';
 import { handleUnifiedUiInteraction } from '../ui/UnifiedUiRouter.js';
 import { handleOwnerUiInteraction } from '../ui/OwnerUiRouter.js';
 
+// ⚙️ Controle Central de Sistemas
+import {
+  handleSystemControlInteraction
+} from '../systems/systemControlPanel.js';
+
+// 🎁 Sorteios — Fases 1–10
+import {
+  handleGiveawaySystem
+} from '../giveaways/router/giveawayRouter.js';
+
 // 🎫 Tickets — Fases 1–5
-import { handleTicketInteraction } from '../tickets/interactionHandler.js';
+import {
+  handleTicketInteraction
+} from '../tickets/interactionHandler.js';
 
 // 🎫 Tickets — Fases 6–15
-import { handleTicketSystem } from '../tickets/router/ticketRouter.js';
+import {
+  handleTicketSystem
+} from '../tickets/router/ticketRouter.js';
 
 export default {
   name: Events.InteractionCreate,
@@ -26,6 +40,32 @@ export default {
         interaction.isUserSelectMenu?.() ||
         interaction.isModalSubmit()
       ) {
+        console.log(
+          '🔎 INTERAÇÃO:',
+          interaction.customId,
+          '| tipo:',
+          interaction.type
+        );
+
+        // ========================================
+        // ⚙️ CONTROLE CENTRAL DE SISTEMAS
+        // ========================================
+        const centralHandled =
+          await handleSystemControlInteraction(interaction);
+
+        if (centralHandled !== false) {
+          return;
+        }
+
+        // ========================================
+        // 🎁 SORTEIOS — FASES 1–10
+        // ========================================
+        const giveawayHandled =
+          await handleGiveawaySystem(interaction);
+
+        if (giveawayHandled === true) {
+          return;
+        }
 
         // ========================================
         // 🎫 TICKETS — FASES 1–5
