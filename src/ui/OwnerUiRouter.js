@@ -8,9 +8,11 @@ import { assertBotOwner } from '../owner/OwnerAccess.js';
 import { VipManager } from '../owner/VipManager.js';
 import { ExclusiveForcesManager } from '../owner/ExclusiveForcesManager.js';
 import { renderOwnerPanel, renderOwnerForces, renderProPlayers } from './OwnerPanel.js';
+import { GlobalRewardManager } from '../global_profile/GlobalRewardManager.js';
 
 const vip = new VipManager();
 const forces = new ExclusiveForcesManager();
+const globalRewards = new GlobalRewardManager();
 const row = component => new ActionRowBuilder().addComponents(component);
 
 function input(id, label, placeholder, required = true) {
@@ -60,6 +62,14 @@ export async function handleOwnerUiInteraction(interaction) {
         await interaction.showModal(proModal('revoke'));
         return true;
       }
+      if (id === 'owner:reward:send') {
+        const modal = new ModalBuilder().setCustomId('owner:modal:reward').setTitle('Enviar recompensa por Game ID').addComponents(
+          row(input('game_id', 'Game ID do jogador', 'WB-7K4M-92PX')),
+          row(input('title', 'Nome da recompensa', 'Prêmio do sorteio')),
+          row(input('description', 'Descrição', 'Detalhes da recompensa', false))
+        );
+        await interaction.showModal(modal); return true;
+      }
     }
 
     if (interaction.isStringSelectMenu() && id === 'owner:force:create') {
@@ -76,6 +86,12 @@ export async function handleOwnerUiInteraction(interaction) {
       });
       await interaction.reply({ content: `✅ <@${entry.user_id}> recebeu **Pro Player**${entry.expires_at ? ` até <t:${Math.floor(new Date(entry.expires_at).getTime() / 1000)}:F>` : ' permanentemente'}.`, ephemeral: true });
       return true;
+    }
+
+
+    if (interaction.isModalSubmit() && id === 'owner:modal:reward') {
+      const result = globalRewards.sendByGameId({ actorId: interaction.user.id, gameId: interaction.fields.getTextInputValue('game_id'), title: interaction.fields.getTextInputValue('title'), description: interaction.fields.getTextInputValue('description'), source: 'owner' });
+      await interaction.reply({ content: `✅ Recompensa enviada para **${result.profile.game_id}** (<@${result.profile.discord_user_id}>).\n🏠 Origem: **${result.profile.origin_guild_name || result.profile.origin_guild_id || 'não definida'}**\n📬 Recompensa: **${result.reward.title}**`, ephemeral: true }); return true;
     }
 
     if (interaction.isModalSubmit() && id === 'owner:modal:revoke') {

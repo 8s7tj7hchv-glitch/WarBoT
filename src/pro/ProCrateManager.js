@@ -1,0 +1,4 @@
+import { WalletManager } from '../economy/WalletManager.js';import { ProPlayerManager } from './ProPlayerManager.js';
+const TABLE={common:{money:[1500,5000],points:[50,200]},advanced:{money:[5000,15000],points:[200,600]},premium:{money:[15000,50000],points:[600,1800]}};
+const rnd=([a,b])=>Math.floor(a+Math.random()*(b-a+1));
+export class ProCrateManager{constructor(){this.pro=new ProPlayerManager();this.wallet=new WalletManager();}open(uid,type){if(!this.pro.isPro(uid))throw new Error('Caixas Pro exigem Pro ativo.');const t=TABLE[type];if(!t)throw new Error('Caixa inválida.');const p=this.pro.profile(uid);if((p.crates?.[type]||0)<1)throw new Error('Você não possui essa caixa.');this.pro.update(uid,x=>x.crates[type]-=1);const money=rnd(t.money),points=rnd(t.points);this.wallet.add(uid,money);this.pro.addPoints(uid,points);this.pro.log({user_id:String(uid),type:'crate_open',crate:type,money,points});return{money,points};}}

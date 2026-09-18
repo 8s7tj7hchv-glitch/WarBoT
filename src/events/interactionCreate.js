@@ -3,6 +3,10 @@ import { Events, MessageFlags } from 'discord.js';
 import { handleUiInteraction } from '../ui/UiRouter.js';
 import { handleUnifiedUiInteraction } from '../ui/UnifiedUiRouter.js';
 import { handleOwnerUiInteraction } from '../ui/OwnerUiRouter.js';
+import { handleProfileUiInteraction } from '../ui/ProfileUiRouter.js';
+
+// 💎 Sistema Pro
+import { handleProUiInteraction } from '../ui/ProUiRouter.js';
 
 // ⚙️ Controle Central de Sistemas
 import {
@@ -88,6 +92,26 @@ export default {
         }
 
         // ========================================
+        // 👤 PERFIL GLOBAL
+        // ========================================
+        const profileHandled =
+          await handleProfileUiInteraction(interaction);
+
+        if (profileHandled !== false) {
+          return;
+        }
+
+        // ========================================
+        // 💎 SISTEMA PRO
+        // ========================================
+        const proHandled =
+          await handleProUiInteraction(interaction);
+
+        if (proHandled !== false) {
+          return;
+        }
+
+        // ========================================
         // 👑 OWNER
         // ========================================
         const ownerHandled =
@@ -116,6 +140,13 @@ export default {
         if (handled !== false) {
           return;
         }
+
+        // ========================================
+        // ⚠️ INTERAÇÃO NÃO TRATADA
+        // ========================================
+        console.warn(
+          `⚠️ Interação não tratada: ${interaction.customId}`
+        );
 
         return;
       }

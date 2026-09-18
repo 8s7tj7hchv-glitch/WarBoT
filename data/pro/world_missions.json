@@ -1,0 +1,6 @@
+[
+  {"id":"gw_hard_logistics","name":"🌍 Sustentação Global","difficulty":"hard","active":true,"objectives":[{"event":"global_logistics_delivery","target":10}],"reward":{"pro_points":500,"pro_days":0}},
+  {"id":"gw_very_hard_operations","name":"🔴 Operação de Alta Intensidade","difficulty":"very_hard","active":true,"objectives":[{"event":"global_war_battle_participation","target":12},{"event":"global_logistics_delivery","target":8}],"reward":{"pro_points":1000,"pro_days":0}},
+  {"id":"gw_extreme_campaign","name":"🟣 Campanha Extrema","difficulty":"extreme","active":true,"objectives":[{"event":"global_war_battle_participation","target":20},{"event":"global_logistics_delivery","target":15},{"event":"strategic_production","target":20}],"reward":{"pro_points":2000,"pro_days":7}},
+  {"id":"gw_legendary_campaign","name":"👑 Campanha Lendária","difficulty":"legendary","active":true,"objectives":[{"event":"global_war_battle_participation","target":35},{"event":"global_logistics_delivery","target":25},{"event":"strategic_production","target":40},{"event":"world_event_participation","target":5}],"reward":{"pro_points":5000,"pro_days":30}}
+]

@@ -35,7 +35,7 @@ export function renderOwnerPanel(user) {
     new ButtonBuilder().setCustomId('owner:pro:list').setLabel('Pro Players').setEmoji('⭐').setStyle(ButtonStyle.Secondary),
     new ButtonBuilder().setCustomId('owner:pro:grant').setLabel('Presentear Pro').setEmoji('🎁').setStyle(ButtonStyle.Success),
     new ButtonBuilder().setCustomId('owner:pro:revoke').setLabel('Remover Pro').setEmoji('🗑️').setStyle(ButtonStyle.Danger),
-    new ButtonBuilder().setCustomId('owner:refresh').setLabel('Atualizar').setEmoji('🔄').setStyle(ButtonStyle.Secondary)
+    new ButtonBuilder().setCustomId('owner:reward:send').setLabel('Enviar recompensa').setEmoji('📬').setStyle(ButtonStyle.Primary)
   );
 
   const catalog = forces.catalog();

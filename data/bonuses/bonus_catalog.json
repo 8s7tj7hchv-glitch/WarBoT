@@ -1,0 +1,8 @@
+{
+  "miner_instinct": {"name":"Instinto Minerador","emoji":"⛏️","rarity":"uncommon","effects":{"mining_yield_pct":5},"duration_days":null},
+  "industrial_master": {"name":"Mestre Industrial","emoji":"🏭","rarity":"epic","effects":{"production_yield_pct":12,"production_speed_pct":5},"duration_days":null},
+  "global_strategist": {"name":"Estrategista Mundial","emoji":"🌍","rarity":"legendary","effects":{"xp_pct":10,"mission_reward_pct":10,"pro_points_pct":5},"duration_days":30},
+  "logistics_ace": {"name":"Ás da Logística","emoji":"🚚","rarity":"rare","effects":{"freight_reward_pct":8,"freight_fee_reduction_pct":5},"duration_days":14},
+  "research_visionary": {"name":"Visionário de Pesquisa","emoji":"🔬","rarity":"epic","effects":{"research_points_pct":10},"duration_days":21},
+  "world_champion": {"name":"Campeão Mundial","emoji":"🏆","rarity":"mythic","effects":{"xp_pct":15,"mission_reward_pct":15,"pro_points_pct":10},"duration_days":30}
+}
