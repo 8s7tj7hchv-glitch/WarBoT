@@ -1,0 +1,22 @@
+{
+  "first_resources":{"name":"Primeiros Recursos","emoji":"⛏️","category":"economy","description":"Colete 100 recursos.","metric":"resources_collected","target":100,"rarity":"common","rewards":{"xp":100,"money":1000}},
+  "resource_master":{"name":"Mestre dos Recursos","emoji":"⛏️","category":"economy","description":"Colete 10.000 recursos.","metric":"resources_collected","target":10000,"rarity":"epic","rewards":{"xp":1000,"money":25000,"bonus":"miner_instinct"}},
+  "first_production":{"name":"Primeira Produção","emoji":"🏭","category":"industry","description":"Produza 1 item.","metric":"items_produced","target":1,"rarity":"common","rewards":{"xp":100}},
+  "industrial_mastery":{"name":"Mestre Industrial","emoji":"🏭","category":"industry","description":"Produza 1.000 itens.","metric":"items_produced","target":1000,"rarity":"epic","rewards":{"xp":1500,"money":30000,"bonus":"industrial_master"}},
+  "first_sale":{"name":"Primeira Venda","emoji":"💰","category":"economy","description":"Venda seu primeiro item.","metric":"items_sold","target":1,"rarity":"common","rewards":{"xp":100}},
+  "merchant_100":{"name":"Grande Comerciante","emoji":"🏪","category":"economy","description":"Venda 100 itens.","metric":"items_sold","target":100,"rarity":"rare","rewards":{"xp":600,"money":10000}},
+  "transactions_100":{"name":"Mercador Ativo","emoji":"💱","category":"economy","description":"Complete 100 transações.","metric":"transactions","target":100,"rarity":"rare","rewards":{"xp":500,"pro_points":100}},
+  "profession_100":{"name":"Especialista Profissional","emoji":"💼","category":"profession","description":"Realize 100 ações de profissão.","metric":"profession_actions","target":100,"rarity":"rare","rewards":{"xp":500}},
+  "first_battle":{"name":"Primeira Batalha","emoji":"⚔️","category":"combat","description":"Participe da primeira batalha.","event":"battle_participated","target":1,"rarity":"common","rewards":{"xp":150}},
+  "first_victory":{"name":"Primeira Vitória","emoji":"🏆","category":"combat","description":"Conquiste a primeira vitória.","event":"battle_won","target":1,"rarity":"uncommon","rewards":{"xp":250,"pro_points":50}},
+  "veteran_25":{"name":"Veterano","emoji":"⚔️","category":"combat","description":"Conquiste 25 vitórias.","event":"battle_won","target":25,"rarity":"epic","rewards":{"xp":1500,"pro_points":250}},
+  "world_mission_1":{"name":"Primeira Missão Mundial","emoji":"🌍","category":"world","description":"Conclua uma missão da Guerra Mundial.","event":"world_mission_completed","target":1,"rarity":"uncommon","rewards":{"xp":250,"pro_points":50}},
+  "world_mission_10":{"name":"Veterano Mundial","emoji":"🌍","category":"world","description":"Conclua 10 missões da Guerra Mundial.","event":"world_mission_completed","target":10,"rarity":"epic","rewards":{"xp":1200,"pro_points":300}},
+  "extreme_mission":{"name":"Desafio Extremo","emoji":"🟣","category":"world","description":"Conclua uma missão Extrema.","event":"world_mission_extreme","target":1,"rarity":"legendary","rewards":{"xp":2000,"pro_points":500,"bonus":"global_strategist"}},
+  "legendary_mission":{"name":"Lenda Mundial","emoji":"👑","category":"world","description":"Conclua uma missão Lendária.","event":"world_mission_legendary","target":1,"rarity":"mythic","rewards":{"xp":3000,"pro_points":1000,"bonus":"world_champion"}},
+  "logistics_50":{"name":"Mestre da Logística","emoji":"🚚","category":"logistics","description":"Complete 50 entregas.","event":"delivery_completed","target":50,"rarity":"epic","rewards":{"xp":1000,"pro_points":200,"bonus":"logistics_ace"}},
+  "research_1":{"name":"Primeira Pesquisa","emoji":"🔬","category":"research","description":"Conclua uma pesquisa.","event":"research_completed","target":1,"rarity":"uncommon","rewards":{"xp":200}},
+  "research_25":{"name":"Visionário de Pesquisa","emoji":"🔬","category":"research","description":"Conclua 25 pesquisas.","event":"research_completed","target":25,"rarity":"legendary","rewards":{"xp":1800,"pro_points":400,"bonus":"research_visionary"}},
+  "treaty_1":{"name":"Diplomata","emoji":"🤝","category":"diplomacy","description":"Participe de um tratado aceito.","event":"treaty_accepted","target":1,"rarity":"uncommon","rewards":{"xp":200}},
+  "alliance_1":{"name":"Aliado Mundial","emoji":"🕊️","category":"diplomacy","description":"Participe de uma aliança.","event":"alliance_joined","target":1,"rarity":"rare","rewards":{"xp":400,"pro_points":75}}
+}

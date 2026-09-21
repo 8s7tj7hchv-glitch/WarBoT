@@ -4,6 +4,7 @@ import { handleUiInteraction } from '../ui/UiRouter.js';
 import { handleUnifiedUiInteraction } from '../ui/UnifiedUiRouter.js';
 import { handleOwnerUiInteraction } from '../ui/OwnerUiRouter.js';
 import { handleProfileUiInteraction } from '../ui/ProfileUiRouter.js';
+import { handleBonusUiInteraction } from '../ui/BonusUiRouter.js';
 
 // 💎 Sistema Pro
 import { handleProUiInteraction } from '../ui/ProUiRouter.js';
@@ -98,6 +99,16 @@ export default {
           await handleProfileUiInteraction(interaction);
 
         if (profileHandled !== false) {
+          return;
+        }
+
+        // ========================================
+        // 🎁 BÔNUS & RARIDADES
+        // ========================================
+        const bonusHandled =
+          await handleBonusUiInteraction(interaction);
+
+        if (bonusHandled !== false) {
           return;
         }
 
