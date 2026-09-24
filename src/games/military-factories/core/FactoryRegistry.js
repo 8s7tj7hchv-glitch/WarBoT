@@ -1,0 +1,4 @@
+export const FACTORIES = Object.freeze([
+ ['vehicles','🚙','Fábrica de Veículos Militares','ground'],['armored','🛡️','Fábrica de Blindados','army'],['aviation','✈️','Fábrica Aeronáutica','air'],['shipyard','⚓','Estaleiro Militar','navy'],['missile-systems','🚀','Complexo de Sistemas de Mísseis','strategic'],['strategic','☢️','Complexo Estratégico','strategic'],['electronics','📡','Fábrica de Eletrônica Militar','support'],['components','🧰','Fábrica de Componentes','industry'],['heavy-equipment','🏗️','Fábrica de Equipamentos Pesados','infrastructure'],['logistics','🚚','Fábrica Logística','logistics'],['maintenance','🛠️','Centro de Manutenção','maintenance'],['research','🔬','Centro de Pesquisa Militar','research']
+].map(([id,emoji,name,target])=>({id,emoji,name,target})));
+export const getFactory = id => FACTORIES.find(x=>x.id===id) ?? null;

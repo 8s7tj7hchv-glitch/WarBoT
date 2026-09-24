@@ -1,0 +1,1 @@
+export default [{"id": "heavy-equipment_1", "name": "Máquina industrial", "fictional": true}, {"id": "heavy-equipment_2", "name": "Equipamento de construção", "fictional": true}, {"id": "heavy-equipment_3", "name": "Equipamento logístico", "fictional": true}, {"id": "heavy-equipment_4", "name": "Infraestrutura", "fictional": true}];

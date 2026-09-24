@@ -1,0 +1,1 @@
+export default [{"id": "research_1", "name": "Pesquisa terrestre", "fictional": true}, {"id": "research_2", "name": "Pesquisa aérea", "fictional": true}, {"id": "research_3", "name": "Pesquisa naval", "fictional": true}, {"id": "research_4", "name": "Pesquisa industrial", "fictional": true}, {"id": "research_5", "name": "Pesquisa estratégica fictícia", "fictional": true}];

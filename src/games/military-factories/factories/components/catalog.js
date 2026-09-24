@@ -1,0 +1,1 @@
+export default [{"id": "components_1", "name": "Componente mecânico fictício", "fictional": true}, {"id": "components_2", "name": "Componente eletrônico", "fictional": true}, {"id": "components_3", "name": "Peça industrial", "fictional": true}, {"id": "components_4", "name": "Kit de manutenção", "fictional": true}];

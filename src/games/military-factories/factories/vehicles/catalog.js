@@ -1,0 +1,1 @@
+export default [{"id": "vehicles_1", "name": "Veículos blindados fictícios", "fictional": true}, {"id": "vehicles_2", "name": "Veículos de transporte", "fictional": true}, {"id": "vehicles_3", "name": "Veículos de reconhecimento", "fictional": true}, {"id": "vehicles_4", "name": "Unidades de engenharia", "fictional": true}];

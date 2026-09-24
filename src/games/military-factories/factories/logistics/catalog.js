@@ -1,0 +1,1 @@
+export default [{"id": "logistics_1", "name": "Caminhão", "fictional": true}, {"id": "logistics_2", "name": "Veículo de carga", "fictional": true}, {"id": "logistics_3", "name": "Contêiner", "fictional": true}, {"id": "logistics_4", "name": "Equipamento de transporte", "fictional": true}];

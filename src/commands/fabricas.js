@@ -3,7 +3,7 @@ import { renderFactoriesPanel } from '../games/military-factories/ui/FactoriesPa
 
 export default {
   data: new SlashCommandBuilder()
-    .setName('industria')
+    .setName('fabricas')
     .setDescription('Abre as Fábricas Militares da Guerra Mundial.'),
 
   async execute(interaction) {

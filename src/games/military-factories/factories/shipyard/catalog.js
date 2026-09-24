@@ -1,0 +1,1 @@
+export default [{"id": "shipyard_1", "name": "Navios fictícios", "fictional": true}, {"id": "shipyard_2", "name": "Submarinos fictícios", "fictional": true}, {"id": "shipyard_3", "name": "Navios logísticos", "fictional": true}, {"id": "shipyard_4", "name": "Patrulheiros", "fictional": true}];

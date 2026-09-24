@@ -1,0 +1,1 @@
+export default [{"id": "armored_1", "name": "Tanques fictícios", "fictional": true}, {"id": "armored_2", "name": "Blindados leves", "fictional": true}, {"id": "armored_3", "name": "Blindados pesados", "fictional": true}, {"id": "armored_4", "name": "Plataformas defensivas", "fictional": true}];

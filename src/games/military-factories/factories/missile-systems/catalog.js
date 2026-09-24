@@ -1,0 +1,1 @@
+export default [{"id": "missile-systems_1", "name": "Sistema curto alcance fictício", "fictional": true}, {"id": "missile-systems_2", "name": "Sistema estratégico fictício", "fictional": true}, {"id": "missile-systems_3", "name": "Plataforma abstrata", "fictional": true}, {"id": "missile-systems_4", "name": "Sistema defensivo fictício", "fictional": true}];

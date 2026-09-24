@@ -1,0 +1,1 @@
+export default [{"id": "strategic_1", "name": "Tecnologia estratégica fictícia", "fictional": true}, {"id": "strategic_2", "name": "Componente estratégico fictício", "fictional": true}, {"id": "strategic_3", "name": "Sistema nuclear fictício", "fictional": true}, {"id": "strategic_4", "name": "Armamento estratégico fictício", "fictional": true}];

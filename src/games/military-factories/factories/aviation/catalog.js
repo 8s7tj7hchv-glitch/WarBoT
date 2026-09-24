@@ -1,0 +1,1 @@
+export default [{"id": "aviation_1", "name": "Aeronaves fictícias", "fictional": true}, {"id": "aviation_2", "name": "Transporte aéreo", "fictional": true}, {"id": "aviation_3", "name": "Reconhecimento aéreo", "fictional": true}, {"id": "aviation_4", "name": "Drones fictícios", "fictional": true}];

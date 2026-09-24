@@ -1,0 +1,1 @@
+export default [{"id": "maintenance_1", "name": "Reparação abstrata", "fictional": true}, {"id": "maintenance_2", "name": "Recuperação de unidade", "fictional": true}, {"id": "maintenance_3", "name": "Revisão", "fictional": true}, {"id": "maintenance_4", "name": "Modernização fictícia", "fictional": true}];

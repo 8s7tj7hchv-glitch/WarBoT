@@ -6,6 +6,9 @@ import { handleOwnerUiInteraction } from '../ui/OwnerUiRouter.js';
 import { handleProfileUiInteraction } from '../ui/ProfileUiRouter.js';
 import { handleBonusUiInteraction } from '../ui/BonusUiRouter.js';
 
+// 🏭 Fábricas Militares — integrado à Guerra Mundial
+import { handleMilitaryFactoriesInteraction } from '../games/military-factories/interactions/FactoriesRouter.js';
+
 // 💎 Sistema Pro
 import { handleProUiInteraction } from '../ui/ProUiRouter.js';
 
@@ -89,6 +92,16 @@ export default {
           await handleTicketSystem(interaction);
 
         if (ticketHandled === true) {
+          return;
+        }
+
+        // ========================================
+        // 🏭 FÁBRICAS MILITARES — GUERRA MUNDIAL
+        // ========================================
+        const factoriesHandled =
+          await handleMilitaryFactoriesInteraction(interaction);
+
+        if (factoriesHandled === true) {
           return;
         }
 

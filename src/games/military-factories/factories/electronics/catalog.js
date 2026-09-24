@@ -1,0 +1,1 @@
+export default [{"id": "electronics_1", "name": "Sensores fictícios", "fictional": true}, {"id": "electronics_2", "name": "Comunicação", "fictional": true}, {"id": "electronics_3", "name": "Sistema de comando", "fictional": true}, {"id": "electronics_4", "name": "Eletrônica fictícia", "fictional": true}];
